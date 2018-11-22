@@ -49,5 +49,3 @@ nnoremap <leader>, :Ack<Space>
 syntax enable
 set background=dark
 colorscheme solarized		" must come after vim-plug
-
-

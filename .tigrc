@@ -9,4 +9,3 @@ set main-view                 = date:custom author:abbreviated commit-title:yes,
 set blame-view                = date:custom author:abbreviated file-name:auto line-number:no,interval=5 text
 set refs-view                 = date:custom author:abbreviated ref commit-title:yes,graph=v2,refs=yes
 set tree-view                 = date:custom author:abbreviated mode file-name:auto 
-
