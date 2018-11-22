@@ -20,8 +20,9 @@ Useful Links
 Includes links to the Vim plugins that I use. Also includes some repos used as inspiration.
 
 - [GitHub Dotfiles](https://dotfiles.github.io/): GitHub guide to dotfiles.
-- [Dotfiles](https://github.com/michaeljsmalley/dotfiles.git): Copied the `makesymlinks.sh` script here.
-- [Solarized Modern PuTTY Defaults](https://github.com/jblaine/solarized-and-modern-putty/blob/master/putty-modern-256color.reg): Coped the Windows registry (.reg) file here.
+- [Dotfiles](https://github.com/michaeljsmalley/dotfiles/blob/master/makesymlinks.sh): Copied `makesymlinks.sh` script here.
+- [Other Dotfiles](https://github.com/bndabbs/dotfiles/blob/master/.vimrc): Copied automatic vim-plug download logic from here.
+- [Solarized Modern PuTTY Defaults](https://github.com/jblaine/solarized-and-modern-putty/blob/master/putty-modern-256color.reg): Copied PuTTY Windows registry (.reg) file here.
 - [Vim Awesome](https://vimawesome.com/): Vim plugin directory.
 - [Why Vim?](http://www.terminally-incoherent.com/blog/2012/03/21/why-vim/): Useful article with Vim usage examples.
 - [idiomatic-vimrc](https://github.com/romainl/idiomatic-vimrc.git): .vimrc guidelines.
