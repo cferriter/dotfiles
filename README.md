@@ -10,7 +10,7 @@ Installation
 ------------
 
 ``` bash
-git clone https://github.com/cferrite/not_yet_a_repo ~/dotfiles
+git clone https://github.com/cferriter/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./makesymlinks.sh
 ```
