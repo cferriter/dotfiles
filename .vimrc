@@ -19,6 +19,11 @@ Plug 'google/vim-searchindex'
 " Use ':PlugUpdate' after making changes
 call plug#end()
 
+"" ================ appearance ================
+syntax enable
+set background=dark
+colorscheme solarized		" must come after vim-plug
+
 "" ================ bindings ================
 let mapleader=" "		" use space as mapleader
 
@@ -52,8 +57,3 @@ endif
 
 " Use <\> + <,> to start string search
 nnoremap <leader>, :Ack<Space>
-
-"" ================ appearance ================
-syntax enable
-set background=dark
-colorscheme solarized		" must come after vim-plug
