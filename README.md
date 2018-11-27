@@ -37,3 +37,4 @@ The Vim plugin manager I use is [vim-plug](https://github.com/junegunn/vim-plug)
 - [ack.vim](https://github.com/mileszs/ack.vim): Search tool which can make use of [ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher).
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
 - [NERD Commenter](https://github.com/scrooloose/nerdcommenter).
+- [vim-searchindex](https://github.com/google/vim-searchindex): Display number of search matches.
