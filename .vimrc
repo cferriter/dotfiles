@@ -18,6 +18,9 @@ Plug 'altercation/vim-colors-solarized'
 " Use ':PlugUpdate' after making changes
 call plug#end()
 
+"" ================ bindings ================
+let mapleader=" "		" use space as mapleader
+
 "" ================ seaching ================
 set hlsearch			" highlight all matches
 
