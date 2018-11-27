@@ -1,3 +1,5 @@
+# ":save-options" in tig to save current config to file in current repo
+
 # Draws better through tmux in some situations
 set line-graphics             = ascii
 
