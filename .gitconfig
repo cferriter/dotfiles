@@ -1,0 +1,15 @@
+[core]
+	editor = vim
+	fileMode = false
+[diff]
+	tool = vimdiff
+[am]
+	threeWay = false
+[difftool]
+	prompt = false
+[color]
+	ui = auto
+[commit]
+	verbose = true
+[include]
+	path = .gitconfig_local
