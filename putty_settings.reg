@@ -67,3 +67,4 @@ REGEDIT4
 "ScrollOnKey"=dword:00000001
 "ScrollOnDisp"=dword:00000000
 "X11Forward"=dword:00000001
+"Beep"=dword:00000000
