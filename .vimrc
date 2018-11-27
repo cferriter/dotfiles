@@ -8,12 +8,12 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Fetch plugins from the below GitHub repos
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-sensible'
+Plug 'altercation/vim-colors-solarized'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdcommenter'
-Plug 'altercation/vim-colors-solarized'
 
 " Use ':PlugUpdate' after making changes
 call plug#end()

@@ -31,9 +31,9 @@ Vim Plugins
 ------------
 The Vim plugin manager I use is [vim-plug](https://github.com/junegunn/vim-plug).
 
-- [ack.vim](https://github.com/mileszs/ack.vim): Search tool which can make use of [ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher).
-- [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file search.
 - [vim-sensible](https://github.com/tpope/vim-sensible): Sensible .vimrc defaults.
+- [Solarized Colorscheme for Vim](https://github.com/altercation/vim-colors-solarized).
+- [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file search.
+- [ack.vim](https://github.com/mileszs/ack.vim): Search tool which can make use of [ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher).
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
 - [NERD Commenter](https://github.com/scrooloose/nerdcommenter).
-- [Solarized Colorscheme for Vim](https://github.com/altercation/vim-colors-solarized).
