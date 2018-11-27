@@ -25,6 +25,10 @@ let mapleader=" "		" use space as mapleader
 "" ================ seaching ================
 set hlsearch			" highlight all matches
 
+"" ================ split panes ================
+set splitbelow
+set splitright
+
 "" ================ CtrlP ================
 " Ignore files listed in .gitignore
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
