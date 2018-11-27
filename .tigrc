@@ -7,7 +7,8 @@ set line-graphics             = ascii
 # Abbreviate author
 # Graph merge commits
 # Show refs (branches and tags)
+# Show commit IDs in blame view
 set main-view                 = date:custom author:abbreviated commit-title:yes,graph=v2,refs=yes
-set blame-view                = date:custom author:abbreviated file-name:auto line-number:no,interval=5 text
+set blame-view                = date:custom author:abbreviated file-name:auto id:yes,color=yes line-number:no,interval=5 text
 set refs-view                 = date:custom author:abbreviated ref commit-title:yes,graph=v2,refs=yes
 set tree-view                 = date:custom author:abbreviated mode file-name:auto 
