@@ -7,7 +7,7 @@ endif
  
 call plug#begin('~/.vim/plugged')
 
-" Shorthand notation; fetches from https://github.com/user/repo
+" Fetch plugins from the below GitHub repos
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-sensible'
 Plug 'mileszs/ack.vim'
