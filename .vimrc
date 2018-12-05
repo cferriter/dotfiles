@@ -1,8 +1,8 @@
 "" ================ vim-plug ================
 " Attempt to install the vim-plug plugin manager.
 if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !mkdir -p ~/.vim/autoload/ && wget -O ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall | source $MYVIMRC
+	silent !mkdir -p ~/.vim/autoload/ && wget -O ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
  
 call plug#begin('~/.vim/plugged')
@@ -56,7 +56,7 @@ let g:ctrlp_prompt_mappings = {
 "" ================ ack.vim ================
 " Use ag to search.
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+	let g:ackprg = 'ag --vimgrep'
 endif
 
 " Use <\> + <,> to start string search
