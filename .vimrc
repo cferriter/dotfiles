@@ -10,7 +10,8 @@ call plug#begin('~/.vim/plugged')
 " Fetch plugins from the below GitHub repos.
 Plug 'tpope/vim-sensible'
 Plug 'altercation/vim-colors-solarized'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdcommenter'
@@ -37,21 +38,14 @@ set hlsearch
 set splitbelow
 set splitright
 
-"" ================ CtrlP ================
-" Ignore files listed in .gitignore
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-" Use <\> + <.> to start tags search
-nnoremap <leader>. :CtrlPTag<cr>
+"" ================ fzf.vim ================
+nnoremap ; :Buffers<CR>
+nnoremap <c-p> :Files<CR>
+nnoremap <Leader>r :Tags<CR>
 
-" Move ctrlp match window to top, reverse match order and show more results
-let g:ctrlp_match_window = 'top,order:ttb,max:60'
-
-" Open file in new tab by default
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
+" Use ag to search and allow hidden files to be found.
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
 "" ================ ack.vim ================
 " Use ag to search.
