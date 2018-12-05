@@ -1,14 +1,14 @@
 # ":save-options" in tig to save current config to file in current repo
 
 # Draws better through tmux in some situations
-set line-graphics             = ascii
+set line-graphics = ascii
 
 # Don't show time commited
 # Abbreviate author
 # Graph merge commits
 # Show refs (branches and tags)
 # Show commit IDs in blame view
-set main-view                 = date:custom author:abbreviated commit-title:yes,graph=v2,refs=yes
-set blame-view                = date:custom author:abbreviated file-name:auto id:yes,color=yes line-number:no,interval=5 text
-set refs-view                 = date:custom author:abbreviated ref commit-title:yes,graph=v2,refs=yes
-set tree-view                 = date:custom author:abbreviated mode file-name:auto 
+set main-view = date:custom author:abbreviated commit-title:yes,graph=v2,refs=yes
+set blame-view = date:custom author:abbreviated file-name:auto id:yes,color=yes line-number:no,interval=5 text
+set refs-view = date:custom author:abbreviated ref commit-title:yes,graph=v2,refs=yes
+set tree-view = date:custom author:abbreviated mode file-name:auto
