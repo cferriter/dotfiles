@@ -38,3 +38,4 @@ The Vim plugin manager I use is [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot): A collection of language packs for Vim.
 - [NERD Commenter](https://github.com/scrooloose/nerdcommenter).
 - [vim-searchindex](https://github.com/google/vim-searchindex): Display number of search matches.
+- [tig-explorer.vim](https://github.com/iberianpig/tig-explorer.vim): Jump to tig diff or blame view of current file.

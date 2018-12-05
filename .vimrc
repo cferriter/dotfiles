@@ -16,6 +16,7 @@ Plug 'mileszs/ack.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdcommenter'
 Plug 'google/vim-searchindex'
+Plug 'iberianpig/tig-explorer.vim'
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()
@@ -55,3 +56,10 @@ endif
 
 " Use <\> + <,> to start string search
 nnoremap <leader>, :Ack<Space>
+
+"" ================ tig-explorer.vim ================
+" Open tig with current file.
+nnoremap <Leader>t :TigOpenCurrentFile<CR>
+
+" Open tig blame with current file.
+nnoremap <Leader>b :TigBlame<CR>
