@@ -8,7 +8,7 @@ dir=~/dotfiles
 # Old dotfiles backup directory.
 olddir=~/dotfiles_old
 # List of files/folders to symlink in $HOME.
-files=".vimrc .tmux.conf .tigrc .gitconfig"
+files=".vimrc .tmux.conf .tigrc .gitconfig .gdbinit"
 
 # Create dotfiles_old in $HOME.
 echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
