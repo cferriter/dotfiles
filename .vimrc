@@ -18,6 +18,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'google/vim-searchindex'
 Plug 'iberianpig/tig-explorer.vim'
 Plug 'brookhong/cscope.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()

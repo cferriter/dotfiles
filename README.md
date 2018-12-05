@@ -40,3 +40,4 @@ The Vim plugin manager I use is [vim-plug](https://github.com/junegunn/vim-plug)
 - [vim-searchindex](https://github.com/google/vim-searchindex): Display number of search matches.
 - [tig-explorer.vim](https://github.com/iberianpig/tig-explorer.vim): Jump to tig diff or blame view of current file.
 - [Cscove](https://github.com/brookhong/cscope.vim): Attempts to find proper cscope database for current file and prompts cscope file creation when file not found. Also provides interface to cscope searches.
+- [Gutentags](https://github.com/ludovicchabant/vim-gutentags): Automatic tag file regeneration.
