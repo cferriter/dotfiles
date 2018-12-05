@@ -14,6 +14,8 @@ REGEDIT4
 ; * Load the Default Settings in putty, make edits.
 ; * Run the CMD again, then diff to find the setting name and value.
 ; Note: do not replace the SimonTatham username.
+
+; Solarized color palette.
 "Colour0"="131,148,150"
 "Colour1"="147,161,161"
 "Colour2"="0,43,54"
@@ -36,6 +38,16 @@ REGEDIT4
 "Colour19"="147,161,161"
 "Colour20"="238,232,213"
 "Colour21"="253,246,227"
+
+; Improves display of tmux splits.
+"LineCodePage"="UTF-8"
+
+; Font size in hex.
+"FontHeight"=dword:0000000a
+
+; Other settings.
+"Font"="Lucida Console"
+"FontQuality"=dword:00000003
 "Present"=dword:00000001
 "Protocol"="ssh"
 "CloseOnExit"=dword:00000001
@@ -49,9 +61,6 @@ REGEDIT4
 "ScrollbackLines"=dword:000007d0
 "TermWidth"=dword:00000050
 "TermHeight"=dword:00000028
-"Font"="Lucida Console"
-"FontHeight"=dword:0000000a			; Font size in hex
-"FontQuality"=dword:00000003
 "UseSystemColours"=dword:00000000
 "TryPalette"=dword:00000000
 "ANSIColour"=dword:00000001
@@ -60,7 +69,6 @@ REGEDIT4
 "MouseIsXterm"=dword:00000001
 "RectSelect"=dword:00000000
 "MouseOverride"=dword:00000001
-"LineCodePage"="Use font encoding"		; Fixes the drawing of tmux splits
 "UTF8Override"=dword:00000001
 "ScrollBar"=dword:00000000
 "ScrollBarFullScreen"=dword:00000000

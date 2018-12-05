@@ -1,5 +1,5 @@
 "" ================ vim-plug ================
-" vim-plug configuration
+" Attempt to install the vim-plug plugin manager.
 if empty(glob('~/.vim/autoload/plug.vim'))
     silent !mkdir -p ~/.vim/autoload/ && wget -O ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall | source $MYVIMRC
@@ -7,7 +7,7 @@ endif
  
 call plug#begin('~/.vim/plugged')
 
-" Fetch plugins from the below GitHub repos
+" Fetch plugins from the below GitHub repos.
 Plug 'tpope/vim-sensible'
 Plug 'altercation/vim-colors-solarized'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -16,19 +16,22 @@ Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/nerdcommenter'
 Plug 'google/vim-searchindex'
 
-" Use ':PlugUpdate' after making changes
+" Use ':PlugUpdate' after making changes.
 call plug#end()
 
 "" ================ appearance ================
 syntax enable
 set background=dark
-colorscheme solarized		" must come after vim-plug
+" Must come after vim-plug.
+colorscheme solarized
 
 "" ================ bindings ================
-let mapleader=" "		" use space as mapleader
+" Use space as mapleader.
+let mapleader=" "
 
 "" ================ seaching ================
-set hlsearch			" highlight all matches
+" Highlight all matches.
+set hlsearch
 
 "" ================ split panes ================
 set splitbelow
@@ -51,6 +54,7 @@ let g:ctrlp_prompt_mappings = {
     \ }
 
 "" ================ ack.vim ================
+" Use ag to search.
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
