@@ -19,6 +19,7 @@ Plug 'google/vim-searchindex'
 Plug 'iberianpig/tig-explorer.vim'
 Plug 'brookhong/cscope.vim'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'tpope/vim-sleuth'
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()
@@ -26,6 +27,8 @@ call plug#end()
 "" ================ appearance ================
 syntax enable
 set background=dark
+set list
+set listchars=tab:>-,trail:~,extends:>,precedes:<
 " Must come after vim-plug.
 colorscheme solarized
 
@@ -41,6 +44,8 @@ set hlsearch
 set splitbelow
 set splitright
 
+"" ================ misc ================
+set tabstop=4
 
 "" ================ fzf.vim ================
 nnoremap ; :Buffers<CR>
