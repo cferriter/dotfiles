@@ -13,3 +13,9 @@
 	verbose = true
 [include]
 	path = .gitconfig_local
+[user]
+	name = Cian Ferriter
+[push]
+	default = simple
+[format]
+	signoff = true
