@@ -70,7 +70,7 @@ if executable('ag')
 endif
 
 " Use <\> + <,> to start string search
-nnoremap <leader>, :Ack<Space>
+nnoremap <Leader>, :Ack<Space>
 
 "" ================ tig-explorer.vim ================
 " Open tig with current file.
@@ -80,22 +80,22 @@ nnoremap <Leader>t :TigOpenCurrentFile<CR>
 nnoremap <Leader>b :TigBlame<CR>
 
 "" ================ cscope.vim ================
-nnoremap <leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
-nnoremap <leader>l :call ToggleLocationList()<CR>
+nnoremap <Leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
+nnoremap <Leader>l :call ToggleLocationList()<CR>
 
 " s: Find this C symbol.
-nnoremap  <leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
+nnoremap  <Leader>fs :call CscopeFind('s', expand('<cword>'))<CR>
 " g: Find this definition.
-nnoremap  <leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
+nnoremap  <Leader>fg :call CscopeFind('g', expand('<cword>'))<CR>
 " d: Find functions called by this function.
-nnoremap  <leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
+nnoremap  <Leader>fd :call CscopeFind('d', expand('<cword>'))<CR>
 " c: Find functions calling this function.
-nnoremap  <leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
+nnoremap  <Leader>fc :call CscopeFind('c', expand('<cword>'))<CR>
 " t: Find this text string.
-nnoremap  <leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
+nnoremap  <Leader>ft :call CscopeFind('t', expand('<cword>'))<CR>
 " e: Find this egrep pattern.
-nnoremap  <leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
+nnoremap  <Leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
 " f: Find this file.
-nnoremap  <leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
+nnoremap  <Leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 " i: Find files #including this file.
-nnoremap  <leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
+nnoremap  <Leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
