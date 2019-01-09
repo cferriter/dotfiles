@@ -70,7 +70,7 @@ if executable('ag')
 	let g:ackprg = 'ag --vimgrep'
 endif
 
-" Use <\> + <,> to start string search
+" Start project wide string search. Leave empty to search word under cursor.
 nnoremap <Leader>, :Ack<Space>
 
 "" ================ tig-explorer.vim ================
