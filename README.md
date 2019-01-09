@@ -44,3 +44,4 @@ The Vim plugin manager I use is [vim-plug](https://github.com/junegunn/vim-plug)
 - [Cscove](https://github.com/brookhong/cscope.vim): Attempts to find proper cscope database for current file and prompts cscope file creation when file not found. Also provides interface to cscope searches.
 - [Gutentags](https://github.com/ludovicchabant/vim-gutentags): Automatic tag file regeneration.
 - [sleuth.vim](https://github.com/tpope/vim-sleuth): Automatic detection of indent settings.
+- [Visual Star Search](https://github.com/nelstrom/vim-visual-star-search): Use * to search for visually highlighted text.

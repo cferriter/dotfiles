@@ -20,6 +20,7 @@ Plug 'iberianpig/tig-explorer.vim'
 Plug 'brookhong/cscope.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-sleuth'
+Plug 'nelstrom/vim-visual-star-search'
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()
