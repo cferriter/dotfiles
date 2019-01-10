@@ -73,6 +73,9 @@ endif
 " Start project wide string search. Leave empty to search word under cursor.
 nnoremap <Leader>, :Ack<Space>
 
+" Automagically open the file with 'j' or 'k'.
+let g:ackpreview = 1
+
 "" ================ tig-explorer.vim ================
 " Open tig with current file.
 nnoremap <Leader>t :TigOpenCurrentFile<CR>
