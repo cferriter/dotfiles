@@ -37,8 +37,8 @@ colorscheme solarized
 " Use space as mapleader.
 let mapleader=" "
 
-" Map \ to next buffer.
-map \ :bn<CR>
+" Use \ to open the last used buffer.
+map \ :b#<CR>
 
 "" ================ seaching ================
 " Highlight all matches.
