@@ -28,8 +28,10 @@ call plug#end()
 "" ================ appearance ================
 syntax enable
 set background=dark
-set list
+" Use F3 to toggle the display of whitespace characters.
+nnoremap <F3> :set list!<CR>
 set listchars=tab:>-,trail:~,extends:>,precedes:<
+
 " Must come after vim-plug.
 colorscheme solarized
 
