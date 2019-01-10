@@ -33,6 +33,10 @@ set listchars=tab:>-,trail:~,extends:>,precedes:<
 " Must come after vim-plug.
 colorscheme solarized
 
+" Use F2 to toggle a ruler at 80 characters, shown by default.
+set colorcolumn=80
+nnoremap <F2> :let &cc = &cc == '' ? '80' : ''<CR>
+
 "" ================ bindings ================
 " Use space as mapleader.
 let mapleader=" "
