@@ -53,6 +53,8 @@ set hlsearch
 "" ================ split panes ================
 set splitbelow
 set splitright
+" Set quickfix window height to 50 lines.
+autocmd FileType qf 50wincmd_
 
 "" ================ misc ================
 set tabstop=4
