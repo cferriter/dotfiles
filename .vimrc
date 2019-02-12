@@ -50,6 +50,16 @@ let mapleader=" "
 " Use \ to open the last used buffer.
 map \ :b#<CR>
 
+" Scroll left and right.
+nnoremap L 20zl
+nnoremap H 20zh
+
+nnoremap <c-j> join
+
+" Scroll up and down.
+nmap K 3<c-y>
+nmap J 3<c-e>
+
 " Delete the file currently open.
 nnoremap <Leader>rm :call delete(expand('%')) \| bdelete!<CR>
 
