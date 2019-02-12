@@ -13,7 +13,7 @@ REGEDIT4
 ; * Run the above CMD.
 ; * Load the Default Settings in putty, make edits.
 ; * Run the CMD again, then diff to find the setting name and value.
-; Note: do not replace the SimonTatham username.
+; Note: do not replace the "SimonTatham" username in the above paths.
 
 ; Solarized color palette.
 "Colour0"="131,148,150"
