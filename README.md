@@ -6,6 +6,12 @@ The `makesymlinks.sh` script creates cymlinks from your home directory to the
 files which are located in `~/dotfiles/`. The script will also back up existing
 dotfiles into `~/dotfiles/`.
 
+Prerequisites
+-------------
+- ag must be installed for some of the Vim searching functionality.
+- The editor to be used by git, and hence tig, must be set in the /etc/gitconfig file on a particular system.
+- Vim8 is required for the vim-gutentags plugin.
+
 Installation
 ------------
 
