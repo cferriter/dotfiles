@@ -15,6 +15,7 @@
 	path = .gitconfig_local
 [user]
 	name = Cian Ferriter
+	email = cian.ferriter@intel.com
 [push]
 	default = simple
 [format]
