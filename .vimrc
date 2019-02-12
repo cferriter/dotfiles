@@ -46,6 +46,9 @@ let mapleader=" "
 " Use \ to open the last used buffer.
 map \ :b#<CR>
 
+" Delete the file currently open.
+nnoremap <Leader>rm :call delete(expand('%')) \| bdelete!<CR>
+
 "" ================ seaching ================
 " Highlight all matches.
 set hlsearch
