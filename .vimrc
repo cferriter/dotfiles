@@ -28,6 +28,10 @@ call plug#end()
 "" ================ appearance ================
 syntax enable
 set background=dark
+
+" Don't wrap long lines, necessitates scrolling horizontally.
+set nowrap
+
 " Use F3 to toggle the display of whitespace characters.
 nnoremap <F3> :set list!<CR>
 set listchars=tab:>-,trail:~,extends:>,precedes:<
