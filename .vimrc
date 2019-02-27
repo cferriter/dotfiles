@@ -69,6 +69,9 @@ nnoremap <Leader>rm :call delete(expand('%')) \| bdelete!<CR>
 " Toggle paste mode.
 set pastetoggle=<F4>
 
+" Use ' to jump to exact position of mark.
+map ' `
+
 "" ================ seaching ================
 " Highlight all matches.
 set hlsearch
