@@ -66,6 +66,9 @@ nnoremap <Leader>n :enew<CR>
 " Delete the file currently open.
 nnoremap <Leader>rm :call delete(expand('%')) \| bdelete!<CR>
 
+" Toggle paste mode.
+set pastetoggle=<F4>
+
 "" ================ seaching ================
 " Highlight all matches.
 set hlsearch
