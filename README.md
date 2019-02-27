@@ -9,6 +9,7 @@ dotfiles into `~/dotfiles/`.
 Prerequisites
 -------------
 - ag must be installed for some of the Vim searching functionality.
+- xclip must be installed to copy text in tmux copy mode.
 - The editor to be used by git, and hence tig, must be set in the /etc/gitconfig file on a particular system.
 - Vim8 is required for the vim-gutentags plugin.
 
