@@ -60,6 +60,9 @@ nnoremap <c-j> join
 nmap K 3<c-y>
 nmap J 3<c-e>
 
+" Open new buffer with no name in the current window.
+nnoremap <Leader>n :enew<CR>
+
 " Delete the file currently open.
 nnoremap <Leader>rm :call delete(expand('%')) \| bdelete!<CR>
 
