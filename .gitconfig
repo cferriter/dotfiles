@@ -20,3 +20,5 @@
 	default = simple
 [format]
 	signoff = true
+[credential]
+	helper = store
