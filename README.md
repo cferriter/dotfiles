@@ -52,3 +52,4 @@ The Vim plugin manager I use is [vim-plug](https://github.com/junegunn/vim-plug)
 - [Gutentags](https://github.com/ludovicchabant/vim-gutentags): Automatic tag file regeneration.
 - [sleuth.vim](https://github.com/tpope/vim-sleuth): Automatic detection of indent settings.
 - [Visual Star Search](https://github.com/nelstrom/vim-visual-star-search): Use * to search for visually highlighted text.
+- [Vimwiki](https://github.com/vimwiki/vimwiki): Linked text files with custom syntax highlighting.

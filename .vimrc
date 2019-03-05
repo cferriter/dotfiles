@@ -21,6 +21,7 @@ Plug 'brookhong/cscope.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-sleuth'
 Plug 'nelstrom/vim-visual-star-search'
+Plug 'vimwiki/vimwiki'
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()
@@ -137,3 +138,7 @@ nnoremap  <Leader>fe :call CscopeFind('e', expand('<cword>'))<CR>
 nnoremap  <Leader>ff :call CscopeFind('f', expand('<cword>'))<CR>
 " i: Find files #including this file.
 nnoremap  <Leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
+
+"" ================ vimwiki ================
+" Highlight different header levels in different colors.
+let g:vimwiki_hl_headers = 1
