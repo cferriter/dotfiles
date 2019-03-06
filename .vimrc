@@ -73,6 +73,9 @@ set pastetoggle=<F4>
 " Use ' to jump to exact position of mark.
 map ' `
 
+" Paste while keeping the clipboard intact.
+xnoremap p pgvy
+
 "" ================ seaching ================
 " Highlight all matches.
 set hlsearch
