@@ -35,7 +35,7 @@ set nowrap
 
 " Use F3 to toggle the display of whitespace characters.
 nnoremap <F3> :set list!<CR>
-set listchars=tab:>-,trail:~,extends:>,precedes:<
+set listchars=space:.,tab:>-,trail:~,extends:>,precedes:<
 
 " Must come after vim-plug.
 colorscheme solarized
