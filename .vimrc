@@ -55,7 +55,7 @@ map \ :b#<CR>
 nnoremap L 20zl
 nnoremap H 20zh
 
-nnoremap <c-j> join
+nnoremap <c-j> :join<CR>
 
 " Scroll up and down.
 nmap K 3<c-y>
