@@ -1,6 +1,5 @@
 [core]
 	;editor = vim
-	fileMode = false
 [diff]
 	tool = vimdiff
 [am]
