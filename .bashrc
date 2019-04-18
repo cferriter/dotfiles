@@ -18,10 +18,13 @@ HISTFILESIZE=10000
 shopt -s checkwinsize
 
 # Configure prompt.
-FGBLACK='\e[0;30m';
-BGWHITE="\e[47m"
-ENDCOLOR="\e[0m"
-export PS1="$FGBLACK$BGWHITE\w$ENDCOLOR\$ "
+BLACK_TEXT="\[\033[38;5;0m\]"
+BLUE_BACKGROUND="\[\033[48;5;4m\]"
+RESET="\[$(tput sgr0)\]"
+CURRENT_DIR="\w"
+COLOURED_CURRENT_DIR="${BLACK_TEXT}${BLUE_BACKGROUND}${CURRENT_DIR}${RESET}"
+DOLLAR_SYMBOL="\\$"
+export PS1="${COLOURED_CURRENT_DIR}${DOLLAR_SYMBOL} ${RESET}"
 
 # Enable color support of ls and also add handy aliases.
 if [ -x /usr/bin/dircolors ]; then
