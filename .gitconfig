@@ -20,3 +20,5 @@
 	signoff = true
 [credential]
 	helper = store
+[sendemail]
+	confirm = always
