@@ -4,6 +4,7 @@ alias l='ls'
 alias d='du -csm *'
 
 alias v='vim'
+alias vd='vimdiff'
 
 alias t='tig'
 
