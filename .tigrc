@@ -13,5 +13,8 @@ set tree-view  = date:custom author:abbreviated mode file-name:auto
 # Draws better through tmux in some situations.
 set line-graphics = ascii
 
+# Display full commit rather than individual file changes.
+set file-filter = no
+
 # Use P in the main view to checkout the selected commit.
 bind generic P ?git checkout %(commit)
