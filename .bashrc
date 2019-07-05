@@ -56,5 +56,6 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# VISUAL is just a full screen editor like vim or emacs.
 export VISUAL=vim
 export EDITOR="$VISUAL"
