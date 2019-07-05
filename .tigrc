@@ -3,7 +3,7 @@
 # Draws better through tmux in some situations.
 set line-graphics = ascii
 
-# Don't show time commited.
+# Don't show time committed.
 # Abbreviate author.
 # Graph merge commits.
 # Show refs (branches and tags).
