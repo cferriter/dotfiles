@@ -8,10 +8,10 @@ set line-graphics = ascii
 # Graph merge commits.
 # Show refs (branches and tags).
 # Show commit IDs in blame view.
-set main-view = date:custom author:abbreviated commit-title:yes,graph=v2,refs=yes
-set blame-view = date:custom author:abbreviated file-name:auto id:yes,color=yes line-number:no,interval=5 text
-set refs-view = date:custom author:abbreviated ref commit-title:yes,graph=v2,refs=yes
-set tree-view = date:custom author:abbreviated mode file-name:auto
+set main-view  = date:custom author:abbreviated     commit-title:yes,graph=v2,refs=yes
+set refs-view  = date:custom author:abbreviated ref commit-title:yes,graph=v2,refs=yes
+set blame-view = date:custom author:abbreviated      file-name:auto id:yes,color=yes line-number:no,interval=5 text
+set tree-view  = date:custom author:abbreviated mode file-name:auto
 
 # Use P in the main view to checkout the selected commit.
 bind generic P ?git checkout %(commit)
