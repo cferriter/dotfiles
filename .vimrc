@@ -22,6 +22,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-sleuth'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'vimwiki/vimwiki'
+Plug 'benmills/vimux'
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()
@@ -147,3 +148,7 @@ nnoremap <Leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
 "" ================ vimwiki ================
 " Highlight different header levels in different colors.
 let g:vimwiki_hl_headers = 1
+
+"" ================ vimux ================
+" Run the last run shell CMD in the tmux split.
+nnoremap <Leader>k :w<CR>:VimuxRunCommand("!!")<CR>

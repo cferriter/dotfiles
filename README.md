@@ -53,3 +53,4 @@ The Vim plugin manager I use is [vim-plug](https://github.com/junegunn/vim-plug)
 - [sleuth.vim](https://github.com/tpope/vim-sleuth): Automatic detection of indent settings.
 - [Visual Star Search](https://github.com/nelstrom/vim-visual-star-search): Use * to search for visually highlighted text.
 - [Vimwiki](https://github.com/vimwiki/vimwiki): Linked text files with custom syntax highlighting.
+- [vimux](https://github.com/benmills/vimux): Interact with tmux from vim shortcuts (mainly used for repeating the previous command in a tmux pane split with the current pane).
