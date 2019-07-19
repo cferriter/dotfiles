@@ -101,6 +101,7 @@ set hidden
 nnoremap ; :Buffers<CR>
 nnoremap <c-p> :Files<CR>
 nnoremap <Leader>r :Tags<CR>
+nnoremap <Leader>R :BTags<CR>
 
 " Use ag to search and allow hidden files to be found.
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
