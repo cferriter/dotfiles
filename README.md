@@ -45,6 +45,8 @@ Includes some repos used as inspiration.
 - [System clipboard and Vim](https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim):
   Explains some of the intricacies behind using the system clipboard and Vim as
   well as SSHing.
+- [universal-ctags](https://github.com/universal-ctags/ctags):
+  A more capable ctags implementation.
 
 Vim Plugins
 ------------
