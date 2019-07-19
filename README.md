@@ -48,7 +48,8 @@ Includes some repos used as inspiration.
 
 Vim Plugins
 ------------
-The Vim plugin manager I use is [vim-plug](https://github.com/junegunn/vim-plug).
+[vim-plug](https://github.com/junegunn/vim-plug) is used to install and manage
+the list of plugins below.
 
 - [sensible.vim](https://github.com/tpope/vim-sensible):
   Sensible .vimrc defaults.
