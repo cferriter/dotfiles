@@ -79,6 +79,10 @@ map ' `
 " Paste while keeping the clipboard intact.
 xnoremap p pgvy
 
+" Next and previous quickfix list results.
+nnoremap <Leader>n :cn<CR>
+nnoremap <Leader>N :cp<CR>
+
 "" ================ seaching ================
 " Highlight all matches.
 set hlsearch
