@@ -83,6 +83,15 @@ xnoremap p pgvy
 nnoremap <Leader>n :cn<CR>
 nnoremap <Leader>N :cp<CR>
 
+" Remove trailing whitespace.
+fun! TrimWhitespace()
+    let l:save = winsaveview()
+    keeppatterns %s/\s\+$//e
+    call winrestview(l:save)
+endfun
+
+nnoremap <Leader>w :call TrimWhitespace()<CR>
+
 "" ================ seaching ================
 " Highlight all matches.
 set hlsearch
