@@ -10,7 +10,7 @@ alias vd='vimdiff'
 
 alias t='tig'
 
-alias ta='tmux a'
+alias ta='tmux a -d'
 
 alias pg='ps aux | grep -i'
 
