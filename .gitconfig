@@ -3,6 +3,8 @@
 	excludesfile = ~/.gitignore
 [diff]
 	tool = vimdiff
+[merge]
+	tool = vimdiff
 [am]
 	threeWay = false
 [difftool]
