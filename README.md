@@ -2,9 +2,9 @@ Dotfiles
 ========
 This repo should be cloned to your home repo so that the path is `~/dotfiles/`.
 
-The `makesymlinks.sh` script creates cymlinks from your home directory to the
+The `makesymlinks.sh` script creates symlinks from your home directory to the
 files which are located in `~/dotfiles/`. The script will also back up existing
-dotfiles into `~/dotfiles/`.
+dotfiles into `~/dotfiles_old/`.
 
 Prerequisites
 -------------
@@ -49,7 +49,7 @@ Includes some repos used as inspiration.
   A more capable ctags implementation.
 
 Vim Plugins
-------------
+-----------
 [vim-plug](https://github.com/junegunn/vim-plug) is used to install and manage
 the list of plugins below.
 
