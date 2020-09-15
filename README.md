@@ -47,6 +47,8 @@ Includes some repos used as inspiration.
   well as SSHing.
 - [universal-ctags](https://github.com/universal-ctags/ctags):
   A more capable ctags implementation.
+- [SSH keys and Pageant with Windows 10](https://talesfromthedatacenter.com/2019/12/how-to-automatically-load-pagent-keys-when-windows-10-boots/):
+  Explains how to use Pageant for SSH key authentication when using SSH to access remote servers.
 
 ## Vim Plugins
 
