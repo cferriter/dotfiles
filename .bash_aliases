@@ -2,6 +2,7 @@ alias ll='ls -lah'
 alias l='ls'
 
 alias gs='git status'
+alias gfa='git fetch --all'
 
 alias d='du -csm *'
 
