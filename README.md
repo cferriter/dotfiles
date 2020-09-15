@@ -85,3 +85,24 @@ the list of plugins below.
 - [vimux](https://github.com/benmills/vimux):
   Interact with tmux from vim shortcuts (mainly used for repeating the previous
   command in a tmux pane split with the current pane).
+
+## Configuring KiTTY
+
+[KiTTY](http://kitty.9bis.net/) allows font size to be changed easily.
+Download "KiTTY Windows no compression" binary. It should pick up on the
+settings configured from the PuTTY registry file. If your PuTTY registry file
+is updated and executed again, press `CTRL+F8` in a KiTTY session and type 
+`/copytokitty`.
+
+KiTTY specific settings are below. These can be changed in
+`C:\Users\windows_username\AppData\Roaming\KiTTY\kitty.ini`
+``` ini
+; Decrease font size
+fontdown={CONTROL}{F11}
+; Increase fonr size
+fontup={CONTROL}{F12}
+; Switch to full screen
+fullscreen={F11}
+; special command box (default is CONTROL+F8)
+input={CONTROL}{F8}
+```
