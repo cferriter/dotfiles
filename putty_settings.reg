@@ -43,7 +43,7 @@ REGEDIT4
 "LineCodePage"="UTF-8"
 
 ; Font size in hex.
-"FontHeight"=dword:0000000a
+"FontHeight"=dword:00000009
 
 ; Other settings.
 "Font"="Lucida Console"
