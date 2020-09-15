@@ -1,29 +1,29 @@
-Dotfiles
-========
+# Dotfiles
+
 This repo should be cloned to your home repo so that the path is `~/dotfiles/`.
 
 The `makesymlinks.sh` script creates symlinks from your home directory to the
 files which are located in `~/dotfiles/`. The script will also back up existing
 dotfiles into `~/dotfiles_old/`.
 
-Prerequisites
--------------
+## Prerequisites
+
 - ag must be installed for some of the Vim searching functionality.
 - xclip must be installed to copy text in tmux copy mode.
 - The editor to be used by git, and hence tig, must be set in the
   /etc/gitconfig file on a particular system.
 - Vim8 is required for the vim-gutentags plugin.
 
-Installation
-------------
+## Installation
+
 ``` bash
 git clone https://github.com/cferriter/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./makesymlinks.sh
 ```
 
-Useful Links
-------------
+## Useful Links
+
 Includes some repos used as inspiration.
 
 - [GitHub Dotfiles](https://dotfiles.github.io/):
@@ -48,8 +48,8 @@ Includes some repos used as inspiration.
 - [universal-ctags](https://github.com/universal-ctags/ctags):
   A more capable ctags implementation.
 
-Vim Plugins
------------
+## Vim Plugins
+
 [vim-plug](https://github.com/junegunn/vim-plug) is used to install and manage
 the list of plugins below.
 
