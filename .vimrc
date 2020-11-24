@@ -85,9 +85,9 @@ nnoremap <Leader>N :cp<CR>
 
 " Remove trailing whitespace.
 fun! TrimWhitespace()
-    let l:save = winsaveview()
-    keeppatterns %s/\s\+$//e
-    call winrestview(l:save)
+	let l:save = winsaveview()
+	keeppatterns %s/\s\+$//e
+	call winrestview(l:save)
 endfun
 
 nnoremap <Leader>w :call TrimWhitespace()<CR>
