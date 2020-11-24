@@ -3,6 +3,7 @@ alias l='ls'
 
 alias gs='git status'
 alias gfa='git fetch --all'
+alias gcr='git commit --reuse-message=ORIG_HEAD'
 
 alias d='du -csm *'
 
