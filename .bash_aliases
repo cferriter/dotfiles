@@ -18,3 +18,5 @@ alias ta='tmux a -d'
 alias pg='ps aux | grep -i'
 
 alias eg='env | grep -i'
+
+alias watch='watch -n 1 -d'
