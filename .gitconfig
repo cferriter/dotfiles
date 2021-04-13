@@ -19,8 +19,6 @@
 	name = Cian Ferriter
 [push]
 	default = simple
-[format]
-	signoff = true
 [credential]
 	helper = store
 [sendemail]
