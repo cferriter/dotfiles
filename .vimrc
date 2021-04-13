@@ -47,6 +47,9 @@ set colorcolumn=80
 " Use F2 to toggle word wrapping.
 nnoremap <F2> :set wrap!<CR>
 
+" Use F5 to toggle line numbers.
+nnoremap <F5> :set number!<CR>
+
 "" ================ bindings ================
 " Use space as mapleader.
 let mapleader=" "
