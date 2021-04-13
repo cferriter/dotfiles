@@ -141,6 +141,9 @@ nnoremap <Leader>t :TigOpenCurrentFile<CR>
 " Open tig blame with current file.
 nnoremap <Leader>b :TigBlame<CR>
 
+" Disable built-in terminal.
+let g:tig_explorer_use_builtin_term=0
+
 "" ================ cscope.vim ================
 nnoremap <Leader>fa :call CscopeFindInteractive(expand('<cword>'))<CR>
 nnoremap <Leader>l :call ToggleLocationList()<CR>
