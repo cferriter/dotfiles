@@ -17,7 +17,7 @@ cd $DOTFILES_DIR
 
 echo "Moving any existing dotfiles in $HOME to $OLD_DIR"
 for file in $files; do
-	mv ~/$file ~/$OLD_DIR/
+	mv ~/$file $OLD_DIR
 	echo "Creating symlink to $file in $HOME"
 	ln -s $DOTFILES_DIR/$file ~/$file
 done
