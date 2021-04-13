@@ -8,11 +8,13 @@ dotfiles into `~/dotfiles_old/`.
 
 ## Prerequisites
 
-- ag must be installed for some of the Vim searching functionality.
+- `ag` must be installed for some of the Vim searching functionality.
+  [ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher).
 - xclip must be installed to copy text in tmux copy mode.
 - The editor to be used by git, and hence tig, must be set in the
   /etc/gitconfig file on a particular system.
-- Vim8 is required for the vim-gutentags plugin.
+- Vim version 8 is required for the vim-gutentags plugin.
+- `highlight` is required for fancy preview of files using fzf.
 
 ## Installation
 
