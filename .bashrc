@@ -56,6 +56,10 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# Use ag to search for files with both 'fzf' and CTRL+T keybinding.
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
 # VISUAL is just a full screen editor like vim or emacs.
 export VISUAL=vim
 export EDITOR="$VISUAL"
