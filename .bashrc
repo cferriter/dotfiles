@@ -62,6 +62,10 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # Show a fancy preview of the file under the cursor.
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'" 
 
+# Enable fuzzy completion for perf. The default way,
+# '_fzf_setup_completion proc perf', needs '**' to be typed first.
+complete -F _fzf_complete_kill -o default -o bashdefault perf
+
 # VISUAL is just a full screen editor like vim or emacs.
 export VISUAL=vim
 export EDITOR="$VISUAL"
