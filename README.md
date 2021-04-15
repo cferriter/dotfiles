@@ -50,7 +50,8 @@ Includes some repos used as inspiration.
 - [universal-ctags](https://github.com/universal-ctags/ctags):
   A more capable ctags implementation.
 - [SSH keys and Pageant with Windows 10](https://talesfromthedatacenter.com/2019/12/how-to-automatically-load-pagent-keys-when-windows-10-boots/):
-  Explains how to use Pageant for SSH key authentication when using SSH to access remote servers.
+  Explains how to use Pageant for SSH key authentication when using SSH to
+  access remote servers.
 
 ## Vim Plugins
 
@@ -85,7 +86,7 @@ the list of plugins below.
 - [Vimwiki](https://github.com/vimwiki/vimwiki):
   Linked text files with custom syntax highlighting.
 - [vimux](https://github.com/benmills/vimux):
-  Interact with tmux from vim shortcuts (mainly used for repeating the previous
+  Interact with tmux from Vim shortcuts (mainly used for repeating the previous
   command in a tmux pane split with the current pane).
 - [vim-qf](https://github.com/romainl/vim-qf):
   Scale quickfix window with Vim window height.
