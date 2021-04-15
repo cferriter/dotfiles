@@ -87,6 +87,8 @@ the list of plugins below.
 - [vimux](https://github.com/benmills/vimux):
   Interact with tmux from vim shortcuts (mainly used for repeating the previous
   command in a tmux pane split with the current pane).
+- [vim-qf](https://github.com/romainl/vim-qf):
+  Scale quickfix window with Vim window height.
 
 ## Configuring KiTTY
 

@@ -23,6 +23,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'vimwiki/vimwiki'
 Plug 'benmills/vimux'
+Plug 'romainl/vim-qf'
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()
@@ -102,8 +103,8 @@ set hlsearch
 "" ================ split panes ================
 set splitbelow
 set splitright
-" Set quickfix window height to 50 lines.
-autocmd FileType qf 50wincmd_
+" Set quickfix window height to 1/3 of Vim window height.
+let &l:winheight = &lines / 3
 
 "" ================ misc ================
 set tabstop=4
