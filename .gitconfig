@@ -23,3 +23,5 @@
 	confirm = always
 [pull]
 	ff = only
+[alias]
+	cb = checkout -b
