@@ -21,3 +21,5 @@
 	helper = store
 [sendemail]
 	confirm = always
+[pull]
+	ff = only
