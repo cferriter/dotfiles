@@ -25,3 +25,6 @@
 	ff = only
 [alias]
 	cb = checkout -b
+	; '@{u}' is a shortcut for the upstream branch (origin/<current_branch>).
+	overwrite-local = reset --hard '@{u}'
+	ol = overwrite-local
