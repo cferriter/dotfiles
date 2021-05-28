@@ -128,7 +128,7 @@ let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 "" ================ ack.vim ================
 " Use ag to search.
 if executable('ag')
-	let g:ackprg = 'ag --vimgrep'
+	let g:ackprg = 'ag --vimgrep --'
 endif
 
 " Start project wide string search. Leave empty to search word under cursor.
