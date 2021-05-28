@@ -64,6 +64,9 @@ nnoremap H 20zh
 
 nnoremap <c-j> :join<CR>
 
+" Run a program (default is "man") to lookup the keyword under the cursor.
+nnoremap <c-k> K
+
 " Scroll up and down.
 nmap K 3<c-y>
 nmap J 3<c-e>
