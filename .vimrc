@@ -92,7 +92,7 @@ nnoremap <Leader>N :cp<CR>
 
 " Remove trailing whitespace.
 fun! TrimWhitespace()
-	let l:save = winsaveview()
+	let l:save=winsaveview()
 	keeppatterns %s/\s\+$//e
 	call winrestview(l:save)
 endfun
@@ -107,7 +107,7 @@ set hlsearch
 set splitbelow
 set splitright
 " Set quickfix window height to 1/3 of Vim window height.
-let &l:winheight = &lines / 3
+let &l:winheight=&lines / 3
 
 "" ================ misc ================
 set tabstop=4
@@ -123,19 +123,19 @@ nnoremap <Leader>r :Tags<CR>
 nnoremap <Leader>R :BTags<CR>
 
 " Use ag to search and allow hidden files to be found.
-let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 
 "" ================ ack.vim ================
 " Use ag to search.
 if executable('ag')
-	let g:ackprg = 'ag --vimgrep --'
+	let g:ackprg='ag --vimgrep --'
 endif
 
 " Start project wide string search. Leave empty to search word under cursor.
 nnoremap <Leader>, :Ack<Space>
 
 " Automagically open the file with 'j' or 'k'.
-let g:ackpreview = 1
+let g:ackpreview=1
 
 "" ================ tig-explorer.vim ================
 " Open tig with current file.
@@ -170,7 +170,7 @@ nnoremap <Leader>fi :call CscopeFind('i', expand('<cword>'))<CR>
 
 "" ================ vimwiki ================
 " Highlight different header levels in different colors.
-let g:vimwiki_hl_headers = 1
+let g:vimwiki_hl_headers=1
 
 "" ================ vimux ================
 " Run the last run shell CMD in the tmux split.
