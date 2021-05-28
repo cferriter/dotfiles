@@ -108,9 +108,6 @@ let &l:winheight = &lines / 3
 
 "" ================ misc ================
 set tabstop=4
-" Allow yanking to the system clipboard. See link below for more info.
-" https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
-set clipboard=unnamed
 " Allow modified buffers to be hidden.
 set hidden
 
