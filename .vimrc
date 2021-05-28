@@ -108,6 +108,8 @@ let &l:winheight = &lines / 3
 
 "" ================ misc ================
 set tabstop=4
+" Speed up Vim startup time by disabling connection to the X server.
+set clipboard=exclude:.*
 " Allow modified buffers to be hidden.
 set hidden
 
