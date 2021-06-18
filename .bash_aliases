@@ -2,9 +2,6 @@ alias ll='ls -lah'
 alias l='ls'
 
 alias gs='git status'
-alias gfa='git fetch --all'
-alias gcr='git commit --reuse-message=ORIG_HEAD'
-alias grcn='GIT_EDITOR=true git rebase --continue'
 
 alias d='du -csm *'
 
