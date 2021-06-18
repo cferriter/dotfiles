@@ -24,6 +24,7 @@
 [pull]
 	ff = only
 [alias]
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	cb = checkout -b
 	fa = fetch --all
 	; '@{u}' is a shortcut for the upstream branch (origin/<current_branch>).
