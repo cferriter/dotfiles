@@ -30,5 +30,6 @@
 	; '@{u}' is a shortcut for the upstream branch (origin/<current_branch>).
 	overwrite-local = reset --hard '@{u}'
 	ol = overwrite-local
+	dr = diff '@{u}'
 	cr = commit --reuse-message=ORIG_HEAD
 	rcn = ! GIT_EDITOR=true git rebase --continue
