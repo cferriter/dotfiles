@@ -56,9 +56,10 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Use ag to search for files with both 'fzf' and CTRL+T keybinding.
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# Use rg to search for files with both 'fzf' and CTRL+T keybinding.
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob '!.git''
+# Don't respect .gitignore with the CTRL+T keybinding.
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --no-ignore"
 # Show a fancy preview of the file under the cursor.
 export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'" 
 

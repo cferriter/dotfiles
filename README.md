@@ -8,8 +8,8 @@ dotfiles into `~/dotfiles_old/`.
 
 ## Prerequisites
 
-- `ag` must be installed for some of the Vim searching functionality.
-  [ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher).
+- `rg` must be installed for some of the Vim searching functionality.
+  [ripgrep](https://github.com/BurntSushi/ripgrep).
 - xclip must be installed to copy text in tmux copy mode.
 - The editor to be used by git, and hence tig, must be set in the
   /etc/gitconfig file on a particular system.
@@ -65,7 +65,7 @@ the list of plugins below.
   Fuzzy searching tool (mainly used for file and tag searching).
 - [ack.vim](https://github.com/mileszs/ack.vim):
   Search tool which can make use of
-  [ag (The Silver Searcher)](https://github.com/ggreer/the_silver_searcher).
+  [ripgrep](https://github.com/BurntSushi/ripgrep).
 - [vim-polyglot](https://github.com/sheerun/vim-polyglot):
   A collection of language packs for Vim.
 - [NERD Commenter](https://github.com/scrooloose/nerdcommenter).

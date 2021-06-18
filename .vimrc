@@ -122,13 +122,10 @@ nnoremap <c-p> :Files<CR>
 nnoremap <Leader>r :Tags<CR>
 nnoremap <Leader>R :BTags<CR>
 
-" Use ag to search and allow hidden files to be found.
-let $FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-
 "" ================ ack.vim ================
-" Use ag to search.
-if executable('ag')
-	let g:ackprg='ag --vimgrep --'
+" Use rg to search.
+if executable('rg')
+	let g:ackprg='rg --vimgrep --hidden --glob "!.git" --'
 endif
 
 " Start project wide string search. Leave empty to search word under cursor.
@@ -136,6 +133,10 @@ nnoremap <Leader>, :Ack<Space>
 
 " Automagically open the file with 'j' or 'k'.
 let g:ackpreview=1
+
+"" ================ vim-gutentags ================
+let g:gutentags_generate_on_empty_buffer=1
+let g:gutentags_file_list_command='rg --files'
 
 "" ================ tig-explorer.vim ================
 " Open tig with current file.
