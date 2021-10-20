@@ -1,5 +1,4 @@
 [core]
-	;editor = vim
 	excludesFile = ~/.gitignore
 [diff]
 	tool = vimdiff
