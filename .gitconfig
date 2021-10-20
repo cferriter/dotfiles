@@ -30,5 +30,11 @@
 	overwrite-local = reset --hard '@{u}'
 	ol = overwrite-local
 	dr = diff '@{u}'
+	rdr = range-diff '@{u}'...
 	cr = commit --reuse-message=ORIG_HEAD
+	can = commit --amend --no-edit
+	cas = commit --amend --no-edit -s
 	rcn = ! GIT_EDITOR=true git rebase --continue
+	pf = push --force-with-lease
+	bu = ! git branch --set-upstream-to origin/$(git symbolic-ref --short HEAD)
+	fixline = log -1 --abbrev=12 --format='Fixes: %h (\"%s\")%nCc: %ae'
