@@ -17,4 +17,4 @@ alias pg='ps aux | grep -i'
 
 alias eg='env | grep -i'
 
-alias watch='watch -n 1 -d'
+alias watch='watch -n 1 -d '
