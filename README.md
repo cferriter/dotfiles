@@ -93,14 +93,17 @@ the list of plugins below.
 
 ## Configuring KiTTY
 
-[KiTTY](http://kitty.9bis.net/) allows font size to be changed easily.
-Download "KiTTY Windows no compression" binary. It should pick up on the
-settings configured from the PuTTY registry file. If your PuTTY registry file
-is updated and executed again, press `CTRL+F8` in a KiTTY session and type 
-`/copytokitty`.
+[KiTTY](http://kitty.9bis.net/) is a fork of PuTTY with extra features. Most
+interestingly, it allows font size to be changed easily and dynamically. Steps
+to set up KiTTY are below.
 
-KiTTY specific settings are below. These can be changed in
-`C:\Users\windows_username\AppData\Roaming\KiTTY\kitty.ini`
+- Execute the PuTTY registry file in the repo by double-clicking on it in the
+  Windows file explorer.
+- Download the "KiTTY Windows no compression" binary.
+- Rename the binary to `KiTTY.exe`.
+- Move the binary to `C:\Program Files (x86)\KiTTY`.
+- Add the below KiTTY specific settings to the
+  `C:\Users\windows_username\AppData\Roaming\KiTTY\kitty.ini` file.
 ``` ini
 ; Decrease font size
 fontdown={CONTROL}{F11}
@@ -111,3 +114,6 @@ fullscreen={F11}
 ; special command box (default is CONTROL+F8)
 input={CONTROL}{F8}
 ```
+
+If your PuTTY registry file is updated and executed again, press `CTRL+F8` in a
+KiTTY session and type `/copytokitty`.
