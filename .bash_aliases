@@ -27,3 +27,6 @@ alias pcapsummary='tcpdump -enNtq --number -r'
 alias pcapdetail='tshark -V -r'
 
 alias makej='make -j $(nproc)'
+
+color_script_url="https://raw.githubusercontent.com/JohnMorales/dotfiles/master/colors/24-bit-color.sh"
+alias testcolor='bash <(curl -s $color_script_url)'
