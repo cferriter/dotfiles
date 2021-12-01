@@ -25,3 +25,5 @@ alias rel='source ~/.bashrc; bind -f ~/.inputrc'
 
 alias pcapsummary='tcpdump -enNtq --number -r'
 alias pcapdetail='tshark -V -r'
+
+alias makej='make -j $(nproc)'
