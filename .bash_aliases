@@ -20,3 +20,5 @@ alias eg='env | grep -i'
 alias watch='watch -n 1 -d '
 
 alias freq='watch "cat /proc/cpuinfo | grep MHz"'
+
+alias rel='source ~/.bashrc; bind -f ~/.inputrc'
