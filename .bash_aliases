@@ -22,3 +22,6 @@ alias watch='watch -n 1 -d '
 alias freq='watch "cat /proc/cpuinfo | grep MHz"'
 
 alias rel='source ~/.bashrc; bind -f ~/.inputrc'
+
+alias pcapsummary='tcpdump -enNtq --number -r'
+alias pcapdetail='tshark -V -r'
