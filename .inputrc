@@ -1,0 +1,2 @@
+# CTRL + ALT + L to perform alias expansion.
+"\e\C-l": alias-expand-line
