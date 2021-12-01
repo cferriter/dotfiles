@@ -54,7 +54,7 @@ REGEDIT4
 "WarnOnClose"=dword:00000001
 "PingInterval"=dword:00000000
 "PingIntervalSecs"=dword:0000003b
-"TerminalType"="putty-256color"
+"TerminalType"="xterm-256color"
 "SshProt"=dword:00000003
 "HideMousePtr"=dword:00000001
 "Beep"=dword:00000001
