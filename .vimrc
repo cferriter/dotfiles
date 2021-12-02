@@ -31,6 +31,8 @@ call plug#end()
 "" ================ appearance ================
 syntax enable
 set background=dark
+let g:solarized_termtrans=1
+colorscheme solarized
 
 " Don't wrap long lines, necessitates scrolling horizontally.
 set nowrap
@@ -38,9 +40,6 @@ set nowrap
 " Use F3 to toggle the display of whitespace characters.
 nnoremap <F3> :set list!<CR>
 set listchars=space:.,tab:>-,trail:~,extends:>,precedes:<
-
-" Must come after vim-plug.
-colorscheme solarized
 
 " Show a ruler at 80 characters.
 set colorcolumn=80
