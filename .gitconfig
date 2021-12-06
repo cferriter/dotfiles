@@ -34,6 +34,7 @@
 	cr = commit --reuse-message=ORIG_HEAD
 	can = commit --amend --no-edit
 	cas = commit --amend --no-edit -s
+	rc = rebase --continue
 	rcn = ! GIT_EDITOR=true git rebase --continue
 	pf = push --force-with-lease
 	pc = ! git push --set-upstream origin $(git symbolic-ref --short HEAD)
