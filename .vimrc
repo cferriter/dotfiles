@@ -142,7 +142,7 @@ let g:gutentags_file_list_command='rg --files'
 nnoremap <Leader>t :TigOpenCurrentFile<CR>
 
 " Open tig blame with current file.
-nnoremap <Leader>b :TigBlame<CR>
+nnoremap <c-b> :TigBlame<CR>
 
 " Disable built-in terminal.
 let g:tig_explorer_use_builtin_term=0
