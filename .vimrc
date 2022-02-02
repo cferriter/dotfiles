@@ -175,3 +175,16 @@ let g:vimwiki_hl_headers=1
 "" ================ vimux ================
 " Run the last run shell CMD in the tmux split.
 nnoremap <Leader>k :w<CR>:VimuxRunCommand("!!")<CR>
+
+"" ================ termdebug ================
+packadd termdebug
+let g:termdebug_wide = 1
+hi debugPC ctermbg=black guibg=black
+
+nnoremap <Leader>j :Over<CR>
+nnoremap <Leader>c :Continue<CR>
+nnoremap <Leader>b :Break<CR>
+
+" Launch Termdebug, find and attach to vswitchd PID, close the debugged
+" program window and move focus back to the source code window.
+nnoremap <Leader>d :Termdebug<CR>source ~/dotfiles/attach_gdb.py<CR><C-w>W<C-w>c<C-w>w
