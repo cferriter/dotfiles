@@ -22,6 +22,8 @@
 	confirm = always
 [pull]
 	ff = only
+[checkout]
+	defaultRemote = origin
 [alias]
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	cb = checkout -b
