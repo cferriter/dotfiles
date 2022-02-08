@@ -27,6 +27,7 @@
 [alias]
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 	cb = checkout -b
+	cm = checkout master
 	fa = fetch --all
 	; '@{u}' is a shortcut for the upstream branch (origin/<current_branch>).
 	overwrite-local = reset --hard '@{u}'
