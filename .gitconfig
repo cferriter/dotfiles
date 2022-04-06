@@ -32,8 +32,8 @@
 	; '@{u}' is a shortcut for the upstream branch (origin/<current_branch>).
 	overwrite-local = reset --hard '@{u}'
 	ol = overwrite-local
-	dr = diff '@{u}'
-	rdr = range-diff '@{u}'...
+	dr = diff -R '@{u}'
+	rdr = range-diff ...'@{u}'
 	cr = commit --reuse-message=ORIG_HEAD
 	can = commit --amend --no-edit
 	cas = commit --amend --no-edit -s
