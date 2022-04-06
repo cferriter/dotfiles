@@ -35,6 +35,7 @@
 	dr = diff -R '@{u}'
 	rdr = range-diff ...'@{u}'
 	cr = commit --reuse-message=ORIG_HEAD
+	ca = commit --amend
 	can = commit --amend --no-edit
 	cas = commit --amend --no-edit -s
 	rc = rebase --continue
