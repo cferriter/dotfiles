@@ -30,3 +30,24 @@ alias makej='make -j $(nproc)'
 
 color_script_url="https://raw.githubusercontent.com/JohnMorales/dotfiles/master/colors/24-bit-color.sh"
 alias testcolor='bash <(curl -s $color_script_url)'
+
+# Converts a string into a string of lowercase letters, digits and hyphens
+# intended for use in things like URLs, package names or Git branch names.
+slugify() {
+	echo "$1" | iconv -c -t ascii//TRANSLIT | sed -E 's/[~^]+//g' | \
+		sed -E 's/[^a-zA-Z0-9]+/-/g' | sed -E 's/^-+|-+$//g' | tr A-Z a-z
+}
+
+alias pwl='git pw series list'
+alias pwls='git pw series list --submitter'
+
+pwa() {
+	## Get the name of the patch series.
+	name=$(git pw series show -f csv $1 | grep Name | cut -d \" -f4)
+	## Make the string friendly for use as a Git branch name.
+	slug_name=$(slugify "$name")
+	branch_name="pw-${slug_name}"
+	# Checkout the latest master, then branch and apply the series.
+	git checkout master && git pull && git checkout -b $branch_name && \
+		git pw series apply $1
+}
