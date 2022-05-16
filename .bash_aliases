@@ -51,3 +51,13 @@ pwa() {
 	git checkout master && git pull && git checkout -b $branch_name && \
 		git pw series apply $1
 }
+
+# Example usage:
+# ovsdisas <c_function> <txt_file_name>
+# ovsdisas main after_opts
+alias ovsdisas='disas $OVS_DIR/vswitchd/ovs-vswitchd'
+
+disas() {
+	cmd="gdb $1 -batch -ex 'disassemble $2' > $3_$2.txt"
+	eval $cmd
+}
