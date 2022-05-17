@@ -3,6 +3,16 @@ alias l='ls'
 
 alias gs='git status'
 
+# Test applying $1 number of patches.
+gta() {
+	git format-patch -$1 && \
+	git checkout master && \
+	git pull && \
+	git am *.patch && \
+	git reset --hard HEAD~$1 && \
+	rm *.patch
+}
+
 alias d='du -csm *'
 
 alias v='vim'
