@@ -4,7 +4,8 @@ alias l='ls'
 alias gs='git status'
 
 # Test applying $1 number of patches.
-gta() {
+alias gta='git_test_apply'
+git_test_apply() {
 	git format-patch -$1 && \
 	git checkout master && \
 	git pull && \
