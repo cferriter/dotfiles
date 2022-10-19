@@ -109,6 +109,8 @@ to set up KiTTY are below.
 fontdown={CONTROL}{F11}
 ; Increase font size
 fontup={CONTROL}{F12}
+; Clear original CTRL + F12 shortcut
+rollup=
 ; Switch to full screen
 fullscreen={F11}
 ; special command box (default is CONTROL+F8)
