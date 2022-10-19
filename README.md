@@ -101,7 +101,7 @@ to set up KiTTY are below.
   Windows file explorer.
 - Download the "KiTTY Windows no compression" binary.
 - Rename the binary to `KiTTY.exe`.
-- Move the binary to `C:\Program Files (x86)\KiTTY`.
+- Move the binary to `C:\Program Files (x86)\KiTTY\KiTTY.exe`.
 - Add the below KiTTY specific settings to the
   `C:\Users\windows_username\AppData\Roaming\KiTTY\kitty.ini` file.
 ``` ini
