@@ -107,7 +107,7 @@ to set up KiTTY are below.
 ``` ini
 ; Decrease font size
 fontdown={CONTROL}{F11}
-; Increase fonr size
+; Increase font size
 fontup={CONTROL}{F12}
 ; Switch to full screen
 fullscreen={F11}
