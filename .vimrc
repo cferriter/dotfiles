@@ -124,6 +124,10 @@ nnoremap <c-p> :Files<CR>
 nnoremap <Leader>r :Tags<CR>
 nnoremap <Leader>R :BTags<CR>
 
+nnoremap <Leader>d :call fzf#run({
+  \ "source": "rg --files --hidden --glob '!.git' --no-ignore",
+  \ "sink": "Termdebug"})<CR>
+
 "" ================ ack.vim ================
 " Use rg to search.
 if executable('rg')
@@ -190,4 +194,5 @@ nnoremap <Leader>b :Break<CR>
 
 " Launch Termdebug, find and attach to vswitchd PID, close the debugged
 " program window and move focus back to the source code window.
-nnoremap <Leader>d :Termdebug<CR>source ~/dotfiles/attach_gdb.py<CR><C-w>W<C-w>c<C-w>w
+nnoremap <Leader>D :Termdebug<CR>source ~/dotfiles/attach_gdb.py<CR><C-w>W<C-w>c<C-w>w
+"nnoremap <Leader>d :Termdebug<CR>file path/to/executable_file<CR>run arg1 arg2<CR>
