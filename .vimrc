@@ -54,6 +54,9 @@ nnoremap <F5> :set number!<CR>
 " Use space as mapleader.
 let mapleader=" "
 
+" Reload Vim settings.
+nnoremap <Leader>re :so $MYVIMRC<CR>
+
 " Use \ to open the last used buffer.
 map \ :b#<CR>
 
