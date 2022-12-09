@@ -64,10 +64,8 @@ pwa() {
 }
 
 # Example usage:
-# ovsdisas <c_function> <txt_file_name>
-# ovsdisas main after_opts
-alias ovsdisas='disas $OVS_DIR/vswitchd/ovs-vswitchd'
-
+# disas <binary_file> <c_function> <txt_file_name>
+# disas test_program main after_opts
 disas() {
 	cmd="gdb $1 -batch -ex 'disassemble $2' > $3_$2.txt"
 	eval $cmd
