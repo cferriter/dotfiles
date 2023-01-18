@@ -143,6 +143,8 @@ let g:ackpreview=1
 "" ================ vim-gutentags ================
 let g:gutentags_generate_on_empty_buffer=1
 let g:gutentags_file_list_command='rg --files'
+" Allows looking up instrinsic definitions. Use instead of above line.
+"let g:gutentags_file_list_command='rg --files /usr/lib/gcc/x86_64-linux-gnu/9/include .'
 
 "" ================ tig-explorer.vim ================
 " Open tig with current file.
