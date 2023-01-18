@@ -124,6 +124,8 @@ nnoremap <c-p> :Files<CR>
 nnoremap <Leader>r :Tags<CR>
 nnoremap <Leader>R :BTags<CR>
 
+" Search for and launch an executable file in the current directory with
+" Termdebug.
 nnoremap <Leader>d :call fzf#run({
   \ "source": "rg --files --hidden --glob '!.git' --no-ignore",
   \ "sink": "Termdebug"})<CR>
@@ -194,7 +196,13 @@ nnoremap <Leader>j :Over<CR>
 nnoremap <Leader>c :Continue<CR>
 nnoremap <Leader>b :Break<CR>
 
-" Launch Termdebug, find and attach to vswitchd PID, close the debugged
-" program window and move focus back to the source code window.
-nnoremap <Leader>D :Termdebug<CR>source ~/dotfiles/attach_gdb.py<CR><C-w>W<C-w>c<C-w>w
+" Launch Termdebug, run the 'path/to/executable_file' file with 'arg1 arg2'
+" arguments.
+" This is commented out because a similar task is accomplished above in the
+" fzf.vim section.
 "nnoremap <Leader>d :Termdebug<CR>file path/to/executable_file<CR>run arg1 arg2<CR>
+
+" Launch Termdebug, use the 'attach_gdb.py' script to find and attach to a
+" process with 'vswitchd' in the name, close the debugged program window and
+" move focus back to the source code window.
+nnoremap <Leader>D :Termdebug<CR>source ~/dotfiles/attach_gdb.py<CR><C-w>W<C-w>c<C-w>w
