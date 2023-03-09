@@ -32,7 +32,7 @@ call plug#end()
 syntax enable
 set background=dark
 let g:solarized_termtrans=1
-colorscheme solarized
+:silent! colorscheme solarized
 
 " Don't wrap long lines, necessitates scrolling horizontally.
 set nowrap
