@@ -196,11 +196,11 @@ nnoremap <Leader>j :Over<CR>
 nnoremap <Leader>c :Continue<CR>
 nnoremap <Leader>b :Break<CR>
 
-" Launch Termdebug, run the 'path/to/executable_file' file with 'arg1 arg2'
+" Launch Termdebug, run the '/path/to/executable_file' file with 'arg1 arg2'
 " arguments.
 " This is commented out because a similar task is accomplished above in the
 " fzf.vim section.
-"nnoremap <Leader>d :Termdebug<CR>file path/to/executable_file<CR>run arg1 arg2<CR>
+"nnoremap <Leader>d :Termdebug<CR>file /path/to/executable_file<CR>run arg1 arg2<CR>
 
 " Launch Termdebug, use the 'attach_gdb.py' script to find and attach to a
 " process with 'vswitchd' in the name, close the debugged program window and
