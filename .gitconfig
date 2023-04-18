@@ -24,6 +24,8 @@
 	ff = only
 [checkout]
 	defaultRemote = origin
+[init]
+	defaultBranch = main
 [pw]
 	server = https://patchwork.ozlabs.org/api/1.2
 	project = openvswitch
