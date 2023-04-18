@@ -51,6 +51,10 @@ if ! shopt -oq posix; then
 	fi
 fi
 
+# VISUAL is just a full screen editor like vim or emacs.
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Use rg to search for files with both 'fzf' and CTRL+T keybinding.
@@ -64,6 +68,3 @@ export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat 
 # '_fzf_setup_completion proc perf', needs '**' to be typed first.
 complete -F _fzf_complete_kill -o default -o bashdefault perf
 
-# VISUAL is just a full screen editor like vim or emacs.
-export VISUAL=vim
-export EDITOR="$VISUAL"
