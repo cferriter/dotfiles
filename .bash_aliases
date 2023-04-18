@@ -24,7 +24,8 @@ alias tw='tig --word-diff'
 
 alias ta='tmux a -d'
 
-alias pg='ps aux | grep -i'
+alias pg='ps aux | head -1; ps aux | grep -i'
+alias ptg='ps -eLf | head -1; ps -eLf | grep -i'
 
 alias eg='env | grep -i'
 
