@@ -4,7 +4,6 @@ case $- in
 	  *) return;;
 esac
 
-# See "man bash" for explanations to some of these settings.
 # Remove previous lines matching the current line.
 HISTCONTROL=erasedups
 
@@ -43,9 +42,7 @@ if [ -f ~/.bash_local ]; then
 	. ~/.bash_local
 fi
 
-# enable programmable completion features (you don't need to enable
-# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
-# sources /etc/bash.bashrc).
+# Enable programmable completion features.
 if ! shopt -oq posix; then
 	if [ -f /usr/share/bash-completion/bash_completion ]; then
 		. /usr/share/bash-completion/bash_completion
