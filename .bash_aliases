@@ -29,6 +29,8 @@ alias ptg='ps -eLf | head -1; ps -eLf | grep -i'
 
 alias eg='env | grep -i'
 
+alias ag='alias | grep -i'
+
 alias watch='watch -n 1 -d '
 
 alias freq='watch "cat /proc/cpuinfo | grep MHz"'
