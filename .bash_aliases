@@ -45,6 +45,30 @@ alias makej='make -j $(nproc)'
 color_script_url="https://raw.githubusercontent.com/JohnMorales/dotfiles/master/colors/24-bit-color.sh"
 alias testcolor='bash <(curl -s $color_script_url)'
 
+hl() {
+	tput smso; $@; tput sgr0;
+}
+
+err() {
+	tput setaf 1; $@; tput sgr0;
+}
+
+log() {
+	hl echo ">>>>>>>>>>>>>>>>>>>>>>|$@"
+}
+
+log_err() {
+	err echo ">>>>>>>>>>>>>>>>>>>>>>|$@"
+}
+
+log_beg() {
+	hl echo "vvvvvvvvvvvvvvvvvvvvvv|$@"
+}
+
+log_end() {
+	hl echo "^^^^^^^^^^^^^^^^^^^^^^|$@"
+}
+
 # Converts a string into a string of lowercase letters, digits and hyphens
 # intended for use in things like URLs, package names or Git branch names.
 slugify() {
