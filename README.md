@@ -119,3 +119,17 @@ input={CONTROL}{F8}
 
 If your PuTTY registry file is updated and executed again, press `CTRL+F8` in a
 KiTTY session and type `/copytokitty`.
+
+## Configuring Windows Terminal for SSH
+
+### Key-based authentication
+
+Follow steps from this page:
+https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement
+
+For the last step, "Deploying the public key", use the following command in
+PowerShell to deploy the public key onto a Linux machine:
+
+``` powershell
+type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh user@hostname "cat >> .ssh/authorized_keys"
+```
