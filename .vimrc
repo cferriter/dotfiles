@@ -9,7 +9,6 @@ call plug#begin('~/.vim/plugged')
 
 " Fetch plugins from the below GitHub repos.
 Plug 'tpope/vim-sensible'
-Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
@@ -24,15 +23,16 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'vimwiki/vimwiki'
 Plug 'benmills/vimux'
 Plug 'romainl/vim-qf'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()
 
 "" ================ appearance ================
+set termguicolors
 syntax enable
 set background=dark
-let g:solarized_termtrans=1
-:silent! colorscheme solarized
+:silent! colorscheme catppuccin
 
 " Don't wrap long lines, necessitates scrolling horizontally.
 set nowrap
