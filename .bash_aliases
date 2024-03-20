@@ -97,3 +97,7 @@ disas() {
 	cmd="gdb $1 -batch -ex 'disassemble $2' > $3_$2.txt"
 	eval $cmd
 }
+
+alias dcd='docker compose down'
+alias dstop='docker stop $(docker ps -a -q)'
+alias drm='docker system prune -a --volumes'
