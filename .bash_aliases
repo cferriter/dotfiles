@@ -31,7 +31,7 @@ alias eg='env | grep -i'
 
 alias ag='alias | grep -i'
 
-alias watch='watch -n 1 -d '
+alias watch='watch -n 0.1 -d '
 
 alias freq='watch "cat /proc/cpuinfo | grep MHz"'
 
