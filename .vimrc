@@ -41,8 +41,8 @@ set nowrap
 nnoremap <F3> :set list!<CR>
 set listchars=space:.,tab:>-,trail:~,extends:>,precedes:<
 
-" Show a ruler at 80 characters.
-set colorcolumn=80
+" Use F6 to toggle the display of a ruler at 80 characters.
+nnoremap <F6> :execute "set colorcolumn=" . (&colorcolumn == "" ? "80" : "")<CR>
 
 " Use F2 to toggle word wrapping.
 nnoremap <F2> :set wrap!<CR>
