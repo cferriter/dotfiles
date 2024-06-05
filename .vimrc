@@ -186,6 +186,7 @@ let g:vimwiki_hl_headers=1
 "" ================ vimux ================
 " Run the last run shell CMD in the tmux split.
 nnoremap <Leader>k :w<CR>:VimuxRunCommand("!!")<CR>
+nnoremap <Leader>i :w<CR>:VimuxInterruptRunner<CR>:VimuxRunCommand("!!")<CR>
 
 "" ================ termdebug ================
 packadd termdebug
