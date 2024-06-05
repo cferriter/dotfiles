@@ -103,3 +103,8 @@ alias dstop='docker stop $(docker ps -a -q)'
 alias drm='docker system prune -a --volumes'
 
 alias lsnics='lshw -class network -businfo'
+
+webserver() {
+	python3 -m http.server 8080 > /dev/null 2>&1 &
+	echo "Webserver link: http://$(hostname).ir.intel.com:8080/"
+}
