@@ -68,3 +68,4 @@ export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat 
 # '_fzf_setup_completion proc perf', needs '**' to be typed first.
 complete -F _fzf_complete_kill -o default -o bashdefault perf
 
+. "$HOME/.cargo/env"
