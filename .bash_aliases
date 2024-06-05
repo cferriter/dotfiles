@@ -38,7 +38,7 @@ alias freq='watch "cat /proc/cpuinfo | grep MHz"'
 alias rel='source ~/.bashrc; bind -f ~/.inputrc'
 
 alias pcapsummary='tcpdump -enNtq --number -r'
-alias pcapdetail='tshark -V -r'
+alias pcapdetail='tshark -V -o ip.check_checksum:TRUE -o udp.check_checksum:TRUE -r'
 
 alias makej='make -j $(nproc)'
 
