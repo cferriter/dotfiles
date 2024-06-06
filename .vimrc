@@ -23,16 +23,17 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'vimwiki/vimwiki'
 Plug 'benmills/vimux'
 Plug 'romainl/vim-qf'
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'ericbn/vim-solarized'
 
 " Use ':PlugUpdate' after making changes.
 call plug#end()
 
 "" ================ appearance ================
-set termguicolors
 syntax enable
 set background=dark
-:silent! colorscheme catppuccin
+:silent! colorscheme solarized
+let g:solarized_termtrans=1
+set termguicolors
 
 " Don't wrap long lines, necessitates scrolling horizontally.
 set nowrap
