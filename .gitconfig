@@ -50,3 +50,4 @@
 	bu = ! git branch --set-upstream-to origin/$(git symbolic-ref --short HEAD)
 	fixline = log -1 --abbrev=12 --format='Fixes: %h (\"%s\")%nCc: %ae'
 	sum = show --no-patch --oneline
+	pro = remote prune origin
