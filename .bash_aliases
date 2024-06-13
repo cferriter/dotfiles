@@ -28,8 +28,8 @@ alias pg='ps aux | head -1; ps aux | grep -i'
 alias ptg='ps -eLf | head -1; ps -eLf | grep -i'
 
 alias eg='env | grep -i'
-
 alias ag='alias | grep -i'
+alias gg='git alias | grep -i'
 
 alias watch='watch -n 0.1 -d '
 
