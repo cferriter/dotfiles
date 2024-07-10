@@ -99,7 +99,7 @@ disas() {
 }
 
 alias dcd='docker compose down'
-alias dstop='docker stop $(docker ps -a -q)'
+alias dstop='docker stop $(docker ps -a -q) > /dev/null 2>&1'
 alias drm='docker system prune -a --volumes'
 
 alias lsnics='lshw -class network -businfo'
