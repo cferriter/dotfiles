@@ -52,3 +52,5 @@
 	sum = show --no-patch --oneline
 	so = remote show origin
 	pro = remote prune origin
+[sequence]
+	editor = interactive-rebase-tool
