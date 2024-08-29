@@ -1,5 +1,6 @@
 [core]
 	excludesFile = ~/.gitignore
+	pager = /usr/local/bin/diff-highlight | less
 [diff]
 	tool = vimdiff
 [merge]
@@ -54,3 +55,5 @@
 	pro = remote prune origin
 [sequence]
 	editor = interactive-rebase-tool
+[interactive]
+	difffilter = /usr/local/bin/diff-highlight

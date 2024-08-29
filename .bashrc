@@ -51,6 +51,8 @@ if ! shopt -oq posix; then
 	fi
 fi
 
+export PATH="$PATH:/usr/local/bin/diff-highlight"
+
 # VISUAL is just a full screen editor like vim or emacs.
 export VISUAL=vim
 export EDITOR="$VISUAL"

@@ -13,6 +13,9 @@ set tree-view  = date:custom author:abbreviated mode file-name:auto
 # Draws better through tmux in some situations.
 set line-graphics = ascii
 
+# Use Git's diff-highlight tool for better diffs.
+set diff-highlight = true
+
 # Display full commit rather than individual file changes.
 set file-filter = no
 
