@@ -22,7 +22,7 @@ alias vd='vimdiff'
 alias t='tig'
 alias tw='tig --word-diff'
 
-alias ta='tmux a -d'
+alias ta='tmux attach -d'
 
 alias pg='ps aux | head -1; ps aux | grep -i'
 alias ptg='ps -eLf | head -1; ps -eLf | grep -i'
