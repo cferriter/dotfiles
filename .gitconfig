@@ -53,6 +53,7 @@
 	sum = show --no-patch --oneline
 	so = remote show origin
 	pro = remote prune origin
+	subup = submodule update --init
 [sequence]
 	editor = interactive-rebase-tool
 [interactive]
