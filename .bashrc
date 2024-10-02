@@ -72,4 +72,6 @@ export FZF_CTRL_T_OPTS='--preview "bat --style=numbers --color=always --line-ran
 # '_fzf_setup_completion proc perf', needs '**' to be typed first.
 complete -F _fzf_complete_kill -o default -o bashdefault perf
 
+# Keep automatically created lines together at the end of the file.
 . "$HOME/.cargo/env"
+export PATH="$PATH:/root/cian/.local/bin"
