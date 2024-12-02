@@ -57,6 +57,9 @@ export PATH="$PATH:/usr/local/bin/diff-highlight"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Tell GUI programs to use the first local display.
+export DISPLAY=:0
+
 export BAT_THEME="Solarized (dark)"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
