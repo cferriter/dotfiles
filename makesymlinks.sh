@@ -23,6 +23,9 @@ for file in $files; do
 done
 
 # Create htoprc symlink separately because it's special.
-mv ~/.config/htop/htoprc $OLD_DIR
-echo "Creating symlink to htoprc in $HOME/.config/htop/"
-ln -s $DOTFILES_DIR/htoprc ~/.config/htop/htoprc
+config_dirs="htop"
+for config_dir in $config_dirs; do
+	mv ~/.config/$config_dir $OLD_DIR/.config
+	echo "Creating symlink to $config_dir/ in $HOME/.config"
+	ln -s $DOTFILES_DIR/.config/$config_dir ~/.config/$config_dir
+done
