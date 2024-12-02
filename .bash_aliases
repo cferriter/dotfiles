@@ -20,7 +20,6 @@ alias v='vim'
 alias vd='vimdiff'
 
 alias t='tig'
-alias tw='tig --word-diff'
 
 alias ta='tmux attach -d'
 
