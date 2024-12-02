@@ -17,15 +17,16 @@ cd $DOTFILES_DIR
 
 echo "Moving any existing dotfiles in $HOME to $OLD_DIR"
 for file in $files; do
-	mv ~/$file $OLD_DIR
+	mv ~/$file $OLD_DIR > /dev/null 2>&1
 	echo "Creating symlink to $file in $HOME"
 	ln -s $DOTFILES_DIR/$file ~/$file
 done
 
-# Create htoprc symlink separately because it's special.
+# Handle dotfiles that live in ~/.config/* directories separately.
+mkdir -p ~/.config
 config_dirs="htop"
 for config_dir in $config_dirs; do
-	mv ~/.config/$config_dir $OLD_DIR/.config
+	mv ~/.config/$config_dir $OLD_DIR/.config > /dev/null 2>&1
 	echo "Creating symlink to $config_dir/ in $HOME/.config"
 	ln -s $DOTFILES_DIR/.config/$config_dir ~/.config/$config_dir
 done
