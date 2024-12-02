@@ -38,6 +38,9 @@ set termguicolors
 " Don't wrap long lines, necessitates scrolling horizontally.
 set nowrap
 
+" Enable line numbers.
+set number
+
 " Use F3 to toggle the display of whitespace characters.
 nnoremap <F3> :set list!<CR>
 set listchars=space:.,tab:>-,trail:~,extends:>,precedes:<
