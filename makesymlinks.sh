@@ -23,7 +23,7 @@ for file in $files; do
 done
 
 # Create htoprc symlink separately because it's special.
-config_dirs="htop"
+config_dirs="htop nvim"
 for config_dir in $config_dirs; do
 	mv ~/.config/$config_dir $OLD_DIR/.config
 	echo "Creating symlink to $config_dir/ in $HOME/.config"

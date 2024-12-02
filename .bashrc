@@ -54,7 +54,7 @@ fi
 export PATH="$PATH:/usr/local/bin/diff-highlight"
 
 # VISUAL is just a full screen editor like vim or emacs.
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # Tell GUI programs to use the first local display.
