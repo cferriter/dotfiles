@@ -1,28 +1,13 @@
 # Dotfiles
 
-This repo should be cloned to your home repo so that the path is `~/dotfiles/`.
-
-The `makesymlinks.sh` script creates symlinks from your home directory to the
-files which are located in `~/dotfiles/`. The script will also back up existing
-dotfiles into `~/dotfiles_old/`.
-
-## Prerequisites
-
-- `rg` must be installed for some of the Vim searching functionality.
-  [ripgrep](https://github.com/BurntSushi/ripgrep).
-- xclip must be installed to copy text in tmux copy mode.
-- The editor to be used by git, and hence tig, must be set in the
-  /etc/gitconfig file on a particular system.
-- Vim version 8 is required for the vim-gutentags plugin.
-- `highlight` is required for fancy preview of files using fzf.
-
 ## Installation
-
 ``` bash
 git clone https://github.com/cferriter/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-./makesymlinks.sh
+./install.sh
 ```
+
+Existing dotfiles are backed up in `~/dotfiles_old/`.
 
 ## Useful Links
 
@@ -118,6 +103,13 @@ input={CONTROL}{F8}
 If your PuTTY registry file is updated and executed again, press `CTRL+F8` in a
 KiTTY session and type `/copytokitty`.
 
+## Test installation of dotfiles
+`install.sh` can be tested using Docker. Build and run with:
+``` bash
+docker build -t dotfiles-test .
+docker run -it dotfiles-test
+```
+
 ## Configure Windows Terminal for SSH
 
 ### Key-based authentication
@@ -135,3 +127,4 @@ type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh user@hostname "cat >> .ssh/autho
 ## Download and install Xming X Server for Windows
 Download and install from this link:
 https://sourceforge.net/projects/xming/
+
