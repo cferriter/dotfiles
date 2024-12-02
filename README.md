@@ -131,3 +131,7 @@ PowerShell to deploy the public key onto a Linux machine:
 ``` powershell
 type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh user@hostname "cat >> .ssh/authorized_keys"
 ```
+
+## Download and install Xming X Server for Windows
+Download and install from this link:
+https://sourceforge.net/projects/xming/
