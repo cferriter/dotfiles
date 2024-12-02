@@ -91,7 +91,7 @@ the list of plugins below.
 - [vim-qf](https://github.com/romainl/vim-qf):
   Scale quickfix window with Vim window height.
 
-## Configuring KiTTY
+## Configure KiTTY
 
 [KiTTY](http://kitty.9bis.net/) is a fork of PuTTY with extra features. Most
 interestingly, it allows font size to be changed easily and dynamically. Steps
@@ -118,7 +118,7 @@ input={CONTROL}{F8}
 If your PuTTY registry file is updated and executed again, press `CTRL+F8` in a
 KiTTY session and type `/copytokitty`.
 
-## Configuring Windows Terminal for SSH
+## Configure Windows Terminal for SSH
 
 ### Key-based authentication
 
