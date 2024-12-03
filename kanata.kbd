@@ -12,7 +12,7 @@
 
 (defalias
   ;; toggle layer aliases
-  arr (layer-toggle arrows)
+  arr (layer-while-held arrows)
   amm (multi alt (layer-while-held alted-with-exceptions))
 
   ;; tap-hold keys with letters for tap and layer change for hold
