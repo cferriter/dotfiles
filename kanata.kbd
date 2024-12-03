@@ -1,5 +1,6 @@
-(deflocalkeys-win
-  ` 223
+(deflocalkeys-winiov2
+  ` 192
+  \ 226
 )
 
 (defsrc
