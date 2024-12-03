@@ -31,7 +31,7 @@ Includes some repos used as inspiration.
 - [GitHub Dotfiles](https://dotfiles.github.io/):
   GitHub guide to dotfiles.
 - [Dotfiles](https://github.com/michaeljsmalley/dotfiles/blob/master/makesymlinks.sh):
-  Copied `makesymlinks.sh` script here.
+  Copied `makesymlinks.sh` script from here.
 - [Other Dotfiles](https://github.com/bndabbs/dotfiles/blob/master/.vimrc):
   Copied automatic vim-plug download logic from here.
 - [Solarized Modern PuTTY Defaults](https://github.com/jblaine/solarized-and-modern-putty/blob/master/putty-modern-256color.reg):
