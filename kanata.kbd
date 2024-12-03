@@ -1,0 +1,45 @@
+(deflocalkeys-win
+  ` 223
+)
+
+(defsrc
+  `         1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab       q    w    e    r    t    y    u    i    o    p    [    ]
+  caps      a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft \    z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+(defalias
+  ;; toggle layer aliases
+  arr (layer-toggle arrows)
+  amm (multi alt (layer-while-held alted-with-exceptions))
+
+  ;; tap-hold keys with letters for tap and layer change for hold
+  far (tap-hold-release 200 200 f12 @arr)
+  anm (tap-hold-release 200 200 \ @amm)
+)
+
+(deflayer qwerty
+  esc       1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab       q    w    e    r    t    y    u    i    o    p    [    ]
+  @far      a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft @anm z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+(deflayer arrows
+  _         f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  lrld
+  _         _    _    _    _    _    C-bspc bspc del home end _    caps
+  _         lctl lsft _    _    _    left down up   rght `    _    _
+  _    _    _    _    _    S-ins _   _    ret  _    _    _    _
+  _    _    _              _              _    _    _
+)
+
+(deflayer alted-with-exceptions
+  _         _    _    _    _    _    _    _    _    _    _    _    _    _
+  _         _    _    _    _    _    _    _    _    _    _    _    _
+  _         _    _    S-tab A-tab _  _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _    _
+)

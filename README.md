@@ -128,3 +128,10 @@ type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh user@hostname "cat >> .ssh/autho
 Download and install from this link:
 https://sourceforge.net/projects/xming/
 
+## Install and configure Kanata for Windows
+- Download the latest `kanata_gui.exe` from [kanata releases](https://github.com/jtroo/kanata/releases).
+- Rename the binary to `kanata.exe`.
+- Move the binary to `C:\Program Files (x86)\kanata\kanata.exe`.
+- Add the `kanata.kbd` file in this repo to `C:\Program Files (x86)\kanata\kanata.exe`.
+- Create a shortcut for kanata.exe and put it in the Windows startup folder.
+  - Open this folder by pressing `Windows` + `R` and typing `shell:common startup`.
