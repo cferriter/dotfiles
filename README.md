@@ -10,7 +10,6 @@ cd ~/dotfiles
 Existing dotfiles are backed up in `~/dotfiles_old/`.
 
 ## Useful Links
-
 Includes some repos used as inspiration.
 
 - [GitHub Dotfiles](https://dotfiles.github.io/):
@@ -39,7 +38,6 @@ Includes some repos used as inspiration.
   access remote servers.
 
 ## Vim Plugins
-
 [vim-plug](https://github.com/junegunn/vim-plug) is used to install and manage
 the list of plugins below.
 
@@ -77,7 +75,6 @@ the list of plugins below.
   Scale quickfix window with Vim window height.
 
 ## Configure KiTTY
-
 [KiTTY](http://kitty.9bis.net/) is a fork of PuTTY with extra features. Most
 interestingly, it allows font size to be changed easily and dynamically. Steps
 to set up KiTTY are below.
@@ -111,9 +108,7 @@ docker run -it dotfiles-test
 ```
 
 ## Configure Windows Terminal for SSH
-
 ### Key-based authentication
-
 Follow steps from this page:
 https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement
 
