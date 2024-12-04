@@ -125,8 +125,10 @@ https://sourceforge.net/projects/xming/
 
 ## Install and configure Kanata for Windows
 - Download the latest `kanata_gui.exe` from [kanata releases](https://github.com/jtroo/kanata/releases).
-- Rename the binary to `kanata.exe`.
-- Move the binary to `C:\Program Files (x86)\kanata\kanata.exe`.
-- Add the `kanata.kbd` file in this repo to `C:\Program Files (x86)\kanata\kanata.exe`.
-- Create a shortcut for kanata.exe and put it in the Windows startup folder.
-  - Open this folder by pressing `Windows` + `R` and typing `shell:common startup`.
+- Move the binary to `C:\Users\cferrite\AppData\Roaming\kanata\kanata_gui.exe`.
+- Run `create_win_symlinks.sh` to symlink `kanata.kbd` to the above location.
+- Open this folder by pressing `Windows` + `R` and typing `shell:common startup`.
+- Open the Windows startup folder by pressing `Windows` + `R` and typing
+  `shell:common startup`.
+- Create a shortcut for `kanata_gui.exe` and put it in the Windows startup
+  folder.
