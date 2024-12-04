@@ -19,6 +19,8 @@
   ;; tap-hold keys with letters for tap and layer change for hold
   far (tap-hold-release 200 200 f12 @arr)
   anm (tap-hold-release 200 200 \ @amm)
+
+  btk (unicode `)
 )
 
 (deflayer qwerty
@@ -32,7 +34,7 @@
 (deflayer arrows
   _         f1   f2   f3   f4   f5   f6   f7   f8   f9   f10  f11  f12  lrld
   _         _    _    _    _    _    C-bspc bspc del home end _    caps
-  _         _    lctl lsft _    _    left down up   rght `    _    _
+  _         _    lctl lsft _    _    left down up   rght @btk _    _
   _    _    _    _    _    S-ins _   _    ret  _    _    _    _
   _    _    _              _              _    _    _
 )
