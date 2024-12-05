@@ -24,7 +24,7 @@ done
 
 # Handle dotfiles that live in ~/.config/* directories separately.
 mkdir -p ~/.config
-config_dirs="htop"
+config_dirs="htop nvim"
 for config_dir in $config_dirs; do
 	mv ~/.config/$config_dir $OLD_DIR/.config > /dev/null 2>&1
 	echo "Creating symlink to $config_dir/ in $HOME/.config"

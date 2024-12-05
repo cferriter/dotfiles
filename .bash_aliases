@@ -16,7 +16,7 @@ git_test_apply() {
 
 alias d='du -csm *'
 
-alias v='vim'
+alias v='nvim'
 alias vd='vimdiff'
 
 alias t='tig'
