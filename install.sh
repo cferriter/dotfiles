@@ -29,15 +29,27 @@ packages=(
 	tree
 	fd-find
 	xsel
-	software-properties-common
+	## List neovim specific packages.
+	lua5.1
+	liblua5.1-dev
+	gettext
+	libtool
+	libtool-bin
+	autoconf
+	automake
+	cmake
+	g++
+	pkg-config
+	unzip
+	ruby-full
+	cpanminus
+	php
+	php-cli
+	php-mbstring
+	default-jdk
 )
 apt-get update -y
 apt-get install -y "${packages[@]}"
-
-## Install a newer Vim.
-add-apt-repository ppa:jonathonf/vim
-apt-get update -y
-apt-get install -y vim
 
 # Rename 'bat' binary. Other tools expect 'bat'.
 ln -sf /usr/bin/batcat /usr/local/bin/bat
@@ -61,6 +73,13 @@ done
 
 # Install Rust.
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+# Make `cargo` usable later in this script.
+source $HOME/.cargo/env
+
+# Install Go.
+wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.4.linux-amd64.tar.gz
+rm -rf go1.23.4.linux-amd64.tar.gz
 
 # Install Git Interactive Rebase Tool.
 wget https://github.com/MitMaro/git-interactive-rebase-tool/releases/download/2.4.1/git-interactive-rebase-tool-2.4.1-ubuntu-22.04_amd64.deb
@@ -93,3 +112,47 @@ make -j $(nproc) prefix=/usr
 make install -j $(nproc) prefix=/usr
 cd -
 rm -rf /tmp/tig
+
+# Install Neovim and its dependencies.
+cd /tmp
+## Install Lua and its libraries.
+wget https://luarocks.org/releases/luarocks-3.11.1.tar.gz
+tar zxpf luarocks-3.11.1.tar.gz
+cd luarocks-3.11.1
+./configure && make && make install
+luarocks install luasocket
+cd -
+rm -rf luarocks-3.11.1*
+## Install lazygit.
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+install lazygit /usr/local/bin
+rm -rf lazygit.tar.gz lazygit
+## Install tree-sitter.
+cargo install tree-sitter-cli
+## Install node.
+curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+apt-get install -y nodejs
+npm install -g neovim
+## Install perl and its Neovim package.
+yes | cpan App::cpanminus
+cpanm -n Neovim::Ext
+## Install Python Neovim package.
+python3 -m pip install --user --upgrade pynvim
+## Install Ruby Neovim package.
+gem install neovim
+## Install PHP Composer.
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+## Install Julia.
+cargo install juliaup
+julia --version
+## Download, build and install Neovim.
+rm -rf /tmp/neovim
+git clone https://github.com/neovim/neovim.git /tmp/neovim
+cd /tmp/neovim
+git checkout stable
+make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr/local install
+cd -
+rm -rf /tmp/neovim
