@@ -11,6 +11,7 @@ files=".vimrc .tmux.conf .tigrc .gitconfig .gdbinit .bashrc .bash_profile
 .bash_aliases .gitignore .inputrc"
 
 echo "Creating $OLD_DIR for backup of any existing dotfiles in $HOME"
+rm -rf $OLD_DIR
 mkdir -p $OLD_DIR
 
 cd $DOTFILES_DIR
@@ -24,9 +25,10 @@ done
 
 # Handle dotfiles that live in ~/.config/* directories separately.
 mkdir -p ~/.config
+mkdir -p $OLD_DIR/.config
 config_dirs="htop nvim"
 for config_dir in $config_dirs; do
-	mv ~/.config/$config_dir $OLD_DIR/.config > /dev/null 2>&1
+	mv ~/.config/$config_dir $OLD_DIR/.config/$config_dir > /dev/null 2>&1
 	echo "Creating symlink to $config_dir/ in $HOME/.config"
 	ln -s $DOTFILES_DIR/.config/$config_dir ~/.config/$config_dir
 done
