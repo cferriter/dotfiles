@@ -92,14 +92,3 @@ make -j $(nproc) prefix=/usr
 make install -j $(nproc) prefix=/usr
 cd -
 rm -fr /tmp/tig
-
-# Install Universal Ctags.
-rm -fr /tmp/ctags
-git clone https://github.com/universal-ctags/ctags.git /tmp/ctags
-cd /tmp/ctags
-./autogen.sh
-./configure
-make -j $(nproc)
-make install
-cd -
-rm -fr /tmp/ctags
