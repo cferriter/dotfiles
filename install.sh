@@ -40,7 +40,7 @@ apt-get update -y
 apt-get install -y vim
 
 # Rename 'bat' binary. Other tools expect 'bat'.
-ln -s /usr/bin/batcat /usr/local/bin/bat
+ln -sf /usr/bin/batcat /usr/local/bin/bat
 
 # Make symbolic links to dotfiles.
 ./makesymlinks.sh
@@ -82,6 +82,7 @@ cd -
 rm -rf /tmp/tmux
 
 # Install Tmux Plugin Manager.
+rm -rf ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install Tig.
