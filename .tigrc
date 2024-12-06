@@ -24,3 +24,16 @@ bind generic P ?git checkout %(commit)
 
 # Use D in the status view to delete the selected file.
 bind status D !@?rm %(file)
+
+# Make colors look better with the Tokyo Night theme.
+set git-colors = no
+color cursor         black   green
+color search-result  black   yellow
+color line-number    red     black
+color title-focus    black   yellow
+color title-blur     black   magenta
+color diff-header    yellow  default
+color diff-index     blue    default
+color diff-chunk     magenta default
+color "Reported-by:" green   default
+color tree.date      black   cyan    bold
