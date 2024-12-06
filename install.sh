@@ -72,23 +72,23 @@ curl -o /usr/local/bin/diff-highlight https://raw.githubusercontent.com/git/git/
 chmod +x /usr/local/bin/diff-highlight
 
 # Install tmux.
-rm -fr /tmp/tmux
+rm -rf /tmp/tmux
 git clone https://github.com/tmux/tmux.git /tmp/tmux
 cd /tmp/tmux
 sh autogen.sh
 ./configure && make -j $(nproc)
 make install -j $(nproc)
 cd -
-rm -fr /tmp/tmux
+rm -rf /tmp/tmux
 
 # Install Tmux Plugin Manager.
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Install Tig.
-rm -fr /tmp/tig
+rm -rf /tmp/tig
 git clone https://github.com/jonas/tig.git /tmp/tig
 cd /tmp/tig
 make -j $(nproc) prefix=/usr
 make install -j $(nproc) prefix=/usr
 cd -
-rm -fr /tmp/tig
+rm -rf /tmp/tig
