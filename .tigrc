@@ -10,9 +10,6 @@ set refs-view  = date:custom author:abbreviated ref commit-title:yes,graph=v2,re
 set blame-view = date:custom author:abbreviated      file-name:auto id:yes,color=yes line-number:no,interval=5 text
 set tree-view  = date:custom author:abbreviated mode file-name:auto
 
-# Draws better through tmux in some situations.
-set line-graphics = ascii
-
 # Use Git's diff-highlight tool for better diffs.
 set diff-highlight = true
 
