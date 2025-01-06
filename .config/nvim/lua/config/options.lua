@@ -7,3 +7,6 @@ vim.g.autoformat = false
 
 -- Disable mouse.
 vim.opt.mouse = ""
+
+-- Use the system clipboard for all yank, delete, change, and put operations.
+vim.opt.clipboard = "unnamedplus"
