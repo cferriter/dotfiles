@@ -120,8 +120,12 @@ type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh user@hostname "cat >> .ssh/autho
 ```
 
 ## Download and install Xming X Server for Windows
-Download and install from this link:
-https://sourceforge.net/projects/xming/
+- Download from [here](https://sourceforge.net/projects/xming/).
+- Press `Windows`, type `xming`, right click and `Open file location`.
+- Create a shortcut for the `Xming` binary.
+- Open the Windows startup folder by pressing `Windows` + `R` and typing
+  `shell:common startup`.
+- Place the `Xming` shortcut in the Windows startup folder.
 
 ## Install and configure Kanata for Windows
 - Download the latest `kanata_gui.exe` from [kanata releases](https://github.com/jtroo/kanata/releases).
