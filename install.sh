@@ -90,6 +90,11 @@ rm git-interactive-rebase-tool-2.4.1-ubuntu-22.04_amd64.deb
 curl -o /usr/local/bin/diff-highlight https://raw.githubusercontent.com/git/git/3dbfe2b8ae94cbdae5f3d32581aedaa5510fdc87/contrib/diff-highlight/diff-highlight
 chmod +x /usr/local/bin/diff-highlight
 
+# Install fzf.
+rm -rf ~/.fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install --all
+
 # Install tmux.
 rm -rf /tmp/tmux
 git clone https://github.com/tmux/tmux.git /tmp/tmux
