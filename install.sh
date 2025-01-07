@@ -54,6 +54,14 @@ apt-get install -y "${packages[@]}"
 
 # Rename 'bat' binary. Other tools expect 'bat'.
 ln -sf /usr/bin/batcat /usr/local/bin/bat
+## Install the Tokyo Night Moon bat theme.
+mkdir -p "$(bat --config-dir)/themes"
+cd "$(bat --config-dir)/themes"
+curl -O https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/sublime/tokyonight_moon.tmTheme
+bat cache --build
+bat --list-themes | grep tokyo # should output "tokyonight_moon"
+echo '--theme="tokyonight_moon"' >> "$(bat --config-dir)/config"
+cd -
 
 # Make symbolic links to dotfiles.
 ./makesymlinks.sh

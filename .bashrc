@@ -58,8 +58,6 @@ export PATH="$PATH:/usr/local/go/bin"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
-export BAT_THEME="Solarized (dark)"
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Use rg to search for files with both 'fzf' and CTRL+T keybinding.
