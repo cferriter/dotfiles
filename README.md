@@ -37,43 +37,6 @@ Includes some repos used as inspiration.
   Explains how to use Pageant for SSH key authentication when using SSH to
   access remote servers.
 
-## Vim Plugins
-[vim-plug](https://github.com/junegunn/vim-plug) is used to install and manage
-the list of plugins below.
-
-- [sensible.vim](https://github.com/tpope/vim-sensible):
-  Sensible .vimrc defaults.
-- [Solarized Colorscheme for Vim](https://github.com/altercation/vim-colors-solarized).
-- [fzf vim](https://github.com/junegunn/fzf.vim):
-  Fuzzy searching tool (mainly used for file and tag searching).
-- [ack.vim](https://github.com/mileszs/ack.vim):
-  Search tool which can make use of
-  [ripgrep](https://github.com/BurntSushi/ripgrep).
-- [vim-polyglot](https://github.com/sheerun/vim-polyglot):
-  A collection of language packs for Vim.
-- [NERD Commenter](https://github.com/scrooloose/nerdcommenter).
-- [vim-searchindex](https://github.com/google/vim-searchindex):
-  Display number of search matches.
-- [tig-explorer.vim](https://github.com/iberianpig/tig-explorer.vim):
-  Jump to tig diff or blame view of current file.
-- [Cscove](https://github.com/brookhong/cscope.vim):
-  Attempts to find proper cscope database for current file and prompts cscope
-  file creation when file not found. Also provides interface to cscope
-  searches.
-- [Gutentags](https://github.com/ludovicchabant/vim-gutentags):
-  Automatic tag file regeneration.
-- [sleuth.vim](https://github.com/tpope/vim-sleuth):
-  Automatic detection of indent settings.
-- [Visual Star Search](https://github.com/nelstrom/vim-visual-star-search):
-  Use asterisk to search for visually highlighted text.
-- [Vimwiki](https://github.com/vimwiki/vimwiki):
-  Linked text files with custom syntax highlighting.
-- [vimux](https://github.com/benmills/vimux):
-  Interact with tmux from Vim shortcuts (mainly used for repeating the previous
-  command in a tmux pane split with the current pane).
-- [vim-qf](https://github.com/romainl/vim-qf):
-  Scale quickfix window with Vim window height.
-
 ## Configure KiTTY
 [KiTTY](http://kitty.9bis.net/) is a fork of PuTTY with extra features. Most
 interestingly, it allows font size to be changed easily and dynamically. Steps
