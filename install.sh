@@ -47,6 +47,7 @@ packages=(
 	php-cli
 	php-mbstring
 	default-jdk
+	chafa
 )
 apt-get update -y
 apt-get install -y "${packages[@]}"
