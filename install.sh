@@ -29,7 +29,7 @@ packages=(
 	tree
 	fd-find
 	xsel
-	## List neovim specific packages.
+	## List Neovim/LazyVim specific packages.
 	lua5.1
 	liblua5.1-dev
 	gettext
@@ -113,7 +113,7 @@ make install -j $(nproc) prefix=/usr
 cd -
 rm -rf /tmp/tig
 
-# Install Neovim and its dependencies.
+# Install Neovim and Neovim/LazyVim dependencies.
 cd /tmp
 ## Install Lua and its libraries.
 wget https://luarocks.org/releases/luarocks-3.11.1.tar.gz
