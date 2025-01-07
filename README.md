@@ -37,32 +37,6 @@ Includes some repos used as inspiration.
   Explains how to use Pageant for SSH key authentication when using SSH to
   access remote servers.
 
-## Configure KiTTY
-[KiTTY](http://kitty.9bis.net/) is a fork of PuTTY with extra features. Most
-interestingly, it allows font size to be changed easily and dynamically. Steps
-to set up KiTTY are below.
-
-- Execute the PuTTY registry file in the repo by double-clicking on it in the
-  Windows file explorer.
-- Download the "KiTTY Windows no compression" binary.
-- Rename the binary to `KiTTY.exe`.
-- Move the binary to `C:\Program Files (x86)\KiTTY\KiTTY.exe`.
-- Add the below KiTTY specific settings to the
-  `C:\Users\windows_username\AppData\Roaming\KiTTY\kitty.ini` file.
-``` ini
-; Decrease font size
-fontdown={CONTROL}{F10}
-; Increase font size
-fontup={CONTROL}{F11}
-; Switch to full screen
-fullscreen={F11}
-; special command box (default is CONTROL+F8)
-input={CONTROL}{F8}
-```
-
-If your PuTTY registry file is updated and executed again, press `CTRL+F8` in a
-KiTTY session and type `/copytokitty`.
-
 ## Test installation of dotfiles
 `install.sh` can be tested using Docker. Build and run with:
 ``` bash
