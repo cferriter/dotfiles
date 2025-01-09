@@ -12,3 +12,5 @@ local function confirm_and_delete_buffer()
   end
 end
 vim.keymap.set('n', '<leader>rm', confirm_and_delete_buffer)
+
+vim.keymap.set('n', '<leader>gb', '<cmd>TigBlame<cr>', { desc = "Git Blame File" })
