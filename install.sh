@@ -108,6 +108,8 @@ rm -rf /tmp/tmux
 # Install Tmux Plugin Manager.
 rm -rf ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+~/.tmux/plugins/tpm/bin/install_plugins
+~/.tmux/plugins/tpm/bin/update_plugins all
 
 # Install Tig.
 rm -rf /tmp/tig
