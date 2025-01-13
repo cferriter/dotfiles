@@ -41,12 +41,6 @@ packages=(
 	g++
 	pkg-config
 	unzip
-	ruby-full
-	cpanminus
-	php
-	php-cli
-	php-mbstring
-	default-jdk
 	chafa
 )
 apt-get update -y
@@ -149,19 +143,8 @@ cargo install tree-sitter-cli
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 apt-get install -y nodejs
 npm install -g neovim
-## Install perl and its Neovim package.
-yes | cpan App::cpanminus
-cpanm -n Neovim::Ext
 ## Install Python Neovim package.
 python3 -m pip install --user --upgrade pynvim
-## Install Ruby Neovim package.
-gem install neovim
-## Install PHP Composer.
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-## Install Julia.
-cargo install juliaup
-julia --version
 ## Download, build and install Neovim.
 rm -rf /tmp/neovim
 git clone https://github.com/neovim/neovim.git /tmp/neovim
