@@ -119,15 +119,15 @@ cd -
 rm -rf /tmp/tig
 
 # Install Neovim and Neovim/LazyVim dependencies.
-cd /tmp
 ## Install Lua and its libraries.
-wget https://luarocks.org/releases/luarocks-3.11.1.tar.gz
-tar zxpf luarocks-3.11.1.tar.gz
-cd luarocks-3.11.1
+LUAROCKS_VERSION=3.11.1
+wget -O /tmp/luarocks-${LUAROCKS_VERSION}.tar.gz https://luarocks.org/releases/luarocks-${LUAROCKS_VERSION}.tar.gz
+tar zxpf /tmp/luarocks-${LUAROCKS_VERSION}.tar.gz -C /tmp
+cd /tmp/luarocks-${LUAROCKS_VERSION}
 ./configure && make && make install
 luarocks install luasocket
 cd -
-rm -rf luarocks-3.11.1*
+rm -rf /tmp/luarocks-${LUAROCKS_VERSION}.tar.gz /tmp/luarocks-${LUAROCKS_VERSION}
 ## Install lazygit.
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
