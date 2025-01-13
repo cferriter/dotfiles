@@ -10,3 +10,6 @@ vim.opt.mouse = ""
 
 -- Use the system clipboard for all yank, delete, change, and put operations.
 vim.opt.clipboard = "unnamedplus"
+
+-- Disable relative line numbers. LazyVim enables this by default.
+vim.opt.relativenumber = false
