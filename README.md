@@ -40,8 +40,7 @@ Includes some repos used as inspiration.
 ## Test installation of dotfiles
 `install.sh` can be tested using Docker. Build and run with:
 ``` bash
-docker build -t dotfiles-test .
-docker run -it dotfiles-test
+docker build -t dotfiles-test . && docker run -it dotfiles-test
 ```
 
 ## Configure Windows Terminal for SSH
