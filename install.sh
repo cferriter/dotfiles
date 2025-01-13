@@ -33,13 +33,10 @@ packages=(
 	lua5.1
 	liblua5.1-dev
 	gettext
-	libtool
 	libtool-bin
 	autoconf
-	automake
 	cmake
 	g++
-	pkg-config
 	unzip
 	chafa
 )
