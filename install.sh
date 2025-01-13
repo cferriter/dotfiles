@@ -130,10 +130,10 @@ cd -
 rm -rf /tmp/luarocks-${LUAROCKS_VERSION}.tar.gz /tmp/luarocks-${LUAROCKS_VERSION}
 ## Install lazygit.
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
-curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-tar xf lazygit.tar.gz lazygit
-install lazygit /usr/local/bin
-rm -rf lazygit.tar.gz lazygit
+curl -Lo /tmp/lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf /tmp/lazygit.tar.gz -C /tmp lazygit
+install /tmp/lazygit /usr/local/bin
+rm -rf /tmp/lazygit.tar.gz /tmp/lazygit
 ## Install tree-sitter.
 cargo install tree-sitter-cli
 ## Install node.
