@@ -2,7 +2,13 @@ return {
   "epwalsh/obsidian.nvim",
   version = "*",  -- recommended, use latest release instead of latest commit
   lazy = true,
-  ft = "markdown",
+
+  -- Only load obsidian.nvim for markdown files in vault.
+  event = {
+    "BufReadPre /root/notes/*.md",
+    "BufNewFile /root/notes/*.md",
+  },
+
   dependencies = {
     -- Required.
     "nvim-lua/plenary.nvim",
@@ -16,7 +22,7 @@ return {
     workspaces = {
       {
         name = "notes",
-        path = "~/notes",
+        path = "/root/notes",
       },
     },
   },
