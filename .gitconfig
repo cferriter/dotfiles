@@ -56,5 +56,10 @@
 	subup = submodule update --init
 [sequence]
 	editor = interactive-rebase-tool
+[interactive-rebase-tool]
+	inputMoveUp = k
+	inputMoveDown = j
+	inputMoveSelectionUp = Control+k
+	inputMoveSelectionDown = Control+j
 [interactive]
 	difffilter = /usr/local/bin/diff-highlight
