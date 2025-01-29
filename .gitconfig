@@ -49,7 +49,7 @@
 	pf = push --force-with-lease
 	pc = ! git push --set-upstream origin $(git symbolic-ref --short HEAD)
 	bu = ! git branch --set-upstream-to origin/$(git symbolic-ref --short HEAD)
-	fixline = log -1 --abbrev=12 --format='Fixes: %h (\"%s\")%nCc: %ae'
+	fixline = log -1 --abbrev=12 --format='Fixes: %h ("%s")%nCc: %ae'
 	sum = show --no-patch --oneline
 	so = remote show origin
 	pro = remote prune origin
