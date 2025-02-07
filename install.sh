@@ -149,7 +149,7 @@ python3 -m pip install --user --upgrade pynvim
 rm -rf /tmp/neovim
 git clone https://github.com/neovim/neovim.git /tmp/neovim
 cd /tmp/neovim
-git checkout stable
+git checkout nightly
 make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr/local install
 cd -
 rm -rf /tmp/neovim
