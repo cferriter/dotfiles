@@ -18,3 +18,6 @@ vim.keymap.set('n', '<leader>k', '<cmd>w<cr><cmd>VimuxRunCommand("!!")<cr>', { d
 
 -- Open Tig blame at current file and line.
 vim.keymap.set('n', '<leader>gb', '<cmd>TigBlame<cr>', { desc = "Tig Blame File" })
+
+-- Open Copilot chat.
+vim.keymap.set('n', '<leader>ac', '<cmd>CopilotChatToggle<cr>', { desc = "Copilot Chat" })
