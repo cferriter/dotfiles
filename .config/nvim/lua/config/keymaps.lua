@@ -13,4 +13,5 @@ local function confirm_and_delete_buffer()
 end
 vim.keymap.set('n', '<leader>rm', confirm_and_delete_buffer)
 
+-- Open Tig blame at current file and line.
 vim.keymap.set('n', '<leader>gb', '<cmd>TigBlame<cr>', { desc = "Tig Blame File" })
