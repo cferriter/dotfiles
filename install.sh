@@ -27,7 +27,6 @@ packages=(
 	bat
 	pipx
 	tree
-	fd-find
 	xsel
 	## List Neovim/LazyVim specific packages.
 	lua5.1
@@ -75,6 +74,8 @@ done
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 # Make `cargo` usable later in this script.
 source $HOME/.cargo/env
+
+cargo install fd-find
 
 # Install Go.
 wget https://go.dev/dl/go1.23.4.linux-amd64.tar.gz
