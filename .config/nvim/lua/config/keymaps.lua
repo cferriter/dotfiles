@@ -13,5 +13,8 @@ local function confirm_and_delete_buffer()
 end
 vim.keymap.set('n', '<leader>rm', confirm_and_delete_buffer)
 
+--  Rerun the last command in the next tmux pane of the current window.
+vim.keymap.set('n', '<leader>k', '<cmd>w<cr><cmd>VimuxRunCommand("!!")<cr>', { desc = "'!!' in next tmux pane" })
+
 -- Open Tig blame at current file and line.
 vim.keymap.set('n', '<leader>gb', '<cmd>TigBlame<cr>', { desc = "Tig Blame File" })
