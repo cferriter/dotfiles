@@ -11,6 +11,10 @@ tags.lock
 [._]ss[a-gi-z]
 [._]sw[a-p]
 
+# Clang files.
+*.idx
+compile_commands.json
+
 # C++ files.
 ## Prerequisites.
 *.d
