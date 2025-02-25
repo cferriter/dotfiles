@@ -106,6 +106,9 @@ make install -j $(nproc)
 cd -
 rm -rf /tmp/tmux
 
+# Install dependency for tmux-window-name plugin.
+python3 -m pip install --user libtmux
+
 # Install Tmux Plugin Manager.
 rm -rf ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
