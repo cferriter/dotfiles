@@ -22,6 +22,7 @@ alias vd='nvim -d'
 alias t='tig'
 
 alias ta='tmux attach -d'
+alias tls='tmux list-keys'
 
 alias pg='ps aux | head -1; ps aux | grep -i'
 alias ptg='ps -eLf | head -1; ps -eLf | grep -i'
