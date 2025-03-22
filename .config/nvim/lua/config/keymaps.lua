@@ -21,3 +21,7 @@ vim.keymap.set('n', '<leader>gb', '<cmd>TigBlame<cr>', { desc = "Tig Blame File"
 
 -- Open Copilot chat.
 vim.keymap.set('n', '<leader>ac', '<cmd>CopilotChatToggle<cr>', { desc = "Copilot Chat" })
+
+-- Obsidian keymaps.
+vim.keymap.set('n', '<leader>on', '<cmd>ObsidianNew<cr>', { desc = "New" })
+vim.keymap.set('n', '<leader>os', '<cmd>ObsidianSearch<cr>', { desc = "Search" })
