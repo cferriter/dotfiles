@@ -43,18 +43,6 @@ Includes some repos used as inspiration.
 docker build -t dotfiles-test . && docker run -it dotfiles-test
 ```
 
-## Configure Windows Terminal for SSH
-### Key-based authentication
-Follow steps from this page:
-https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement
-
-For the last step, "Deploying the public key", use the following command in
-PowerShell to deploy the public key onto a Linux machine:
-
-``` powershell
-type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh user@hostname "cat >> .ssh/authorized_keys"
-```
-
 ## Download and install Xming X Server for Windows
 - Download from [here](https://sourceforge.net/projects/xming/).
 - Press `Windows`, type `xming`, right click and `Open file location`.
