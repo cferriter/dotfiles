@@ -38,6 +38,7 @@ packages=(
 	g++
 	unzip
 	chafa
+	man-db
 )
 apt-get update -y
 apt-get install -y "${packages[@]}"
@@ -148,11 +149,10 @@ apt-get install -y nodejs
 npm install -g neovim
 ## Install Python Neovim package.
 python3 -m pip install --user --upgrade pynvim
-## Download, build and install Neovim.
-rm -rf /tmp/neovim
-git clone https://github.com/neovim/neovim.git /tmp/neovim
-cd /tmp/neovim
-git checkout nightly
-make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr/local install
-cd -
-rm -rf /tmp/neovim
+## Download and install prebuilt Neovim.
+curl -Lo /tmp/nvim-linux-x86_64.tar.gz https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.tar.gz
+tar -xzf /tmp/nvim-linux-x86_64.tar.gz -C /usr/local
+ln -sf /usr/local/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
+cp -r /usr/local/nvim-linux-x86_64/share/man/* /usr/local/share/man/
+mandb
+rm -rf /tmp/nvim-linux-x86_64.tar.gz
