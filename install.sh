@@ -129,7 +129,7 @@ rm -rf /tmp/tig
 ## Install Lua and its libraries.
 LUAROCKS_VERSION=3.11.1
 wget -O /tmp/luarocks-${LUAROCKS_VERSION}.tar.gz https://luarocks.org/releases/luarocks-${LUAROCKS_VERSION}.tar.gz
-tar zxpf /tmp/luarocks-${LUAROCKS_VERSION}.tar.gz -C /tmp
+tar -zxpf /tmp/luarocks-${LUAROCKS_VERSION}.tar.gz -C /tmp
 cd /tmp/luarocks-${LUAROCKS_VERSION}
 ./configure && make && make install
 luarocks install luasocket
@@ -138,7 +138,7 @@ rm -rf /tmp/luarocks-${LUAROCKS_VERSION}.tar.gz /tmp/luarocks-${LUAROCKS_VERSION
 ## Install lazygit.
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo /tmp/lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
-tar xf /tmp/lazygit.tar.gz -C /tmp lazygit
+tar -xf /tmp/lazygit.tar.gz -C /tmp lazygit
 install /tmp/lazygit /usr/local/bin
 rm -rf /tmp/lazygit.tar.gz /tmp/lazygit
 ## Install tree-sitter.
