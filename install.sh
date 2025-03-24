@@ -102,7 +102,7 @@ rm -rf /tmp/tmux
 git clone https://github.com/tmux/tmux.git /tmp/tmux
 cd /tmp/tmux
 sh autogen.sh
-./configure && make -j $(nproc)
+./configure --enable-sixel && make -j $(nproc)
 make install -j $(nproc)
 cd -
 rm -rf /tmp/tmux
