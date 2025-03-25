@@ -64,7 +64,7 @@ export EDITOR="$VISUAL"
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob '!.git''
 # Don't respect .gitignore with the CTRL+T keybinding.
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND --no-ignore"
-# # Use Tokyo Night Moon theme.
+# Use Tokyo Night Moon theme.
 export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS \
   --highlight-line \
   --info=inline-right \
